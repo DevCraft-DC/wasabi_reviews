@@ -11,7 +11,8 @@
     "lint:fix": "eslint src/**/*.ts{,x} --fix",
     "prettier": "prettier ./src --write",
     "prettier:check": "prettier ./src --check",
-    "precommit": "npm run lint && npm run prettier:check && npm run build"
+    "precommit": "npm run lint && npm run prettier:check && npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -41,6 +42,7 @@
     "prettier": "^2.7.1",
     "typescript": "^5.0.2",
     "vite": "^4.2.0",
-    "vite-tsconfig-paths": "^4.0.7"
+    "vite-tsconfig-paths": "^4.0.7",
+    "husky": "^8.0.0"
   }
 }
