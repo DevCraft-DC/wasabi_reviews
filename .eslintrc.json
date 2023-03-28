@@ -29,6 +29,7 @@
     "react/react-in-jsx-scope": "off",
     "linebreak-style": "off",
     "arrow-body-style": ["error", "as-needed"],
+    "prettier/prettier": "off",
     "import/order": [
       "error",
       {
