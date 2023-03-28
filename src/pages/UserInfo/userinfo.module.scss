@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1rem;
+  }
+}
+
+.inputContainer {
+  input {
+    background-color: black;
+    color: white;
+    width: 20rem;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    outline: none;
+    margin-top: 1rem;
+  }
+}
