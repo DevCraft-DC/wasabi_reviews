@@ -1,0 +1,52 @@
+[
+  {
+    "name": "John Doe",
+    "position": "Менеджер",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjA5MjExMzY0M15BMl5BanBnXkFtZTgwNTMxOTg4MTI@._V1_UY209_CR8,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Крэг Дейв",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_UX140_CR0,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Ли Мэй",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjI3MDQxNDUwOF5BMl5BanBnXkFtZTgwNjY4NjI3NjE@._V1_UX140_CR0,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Сон Волт",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjUxMjE4MTQxMF5BMl5BanBnXkFtZTcwNzc2MDM1NA@@._V1_UY209_CR6,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Брэд Кит",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_UY209_CR19,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Старк Роб",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BYTFlOTdjMjgtNmY0ZC00MDgxLThjNmEtZGIxZTQyZDdkMTRjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR7,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Дрейк Форс",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Кайл Уокер",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzczNzNiMDAtMmUzZS00MTkwLWIwOTYtNmYyNjg3MTVkNThhXkEyXkFqcGdeQXVyMjA4MjI5MTA@._V1_UY209_CR8,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Мэтт Барнс",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BNzEzMTI2NjEyNF5BMl5BanBnXkFtZTcwNTA0OTE4OA@@._V1_UX140_CR0,0,140,209_AL_.jpg"
+  },
+  {
+    "name": "Стив Каррел",
+    "position": "Официант",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjMwNDA3Nl5BMl5BanBnXkFtZTcwMTA2NDY3NQ@@._V1_UY209_CR2,0,140,209_AL_.jpg"
+  }
+]
