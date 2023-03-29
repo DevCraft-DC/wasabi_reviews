@@ -1,14 +1,21 @@
 import { Routes, Route } from 'react-router-dom';
 
+import Food from './pages/Food/Food';
+import Other from './pages/Other/Other';
+import Staff from './pages/Staff/Staff';
+import Thanks from './pages/Thanks/Thanks';
+import UserInfo from './pages/UserInfo/UserInfo';
+import Welcome from './pages/Welcome/Welcome';
+
 const App = () => (
   <Routes>
-    <Route path="/welcome" />
-    <Route path="/userinfo" />
-    <Route path="/choose" />
-    <Route path="/food" />
-    <Route path="/staff" />
-    <Route path="/other" />
-    <Route path="/thanks" />
+    <Route path="/wasabi_reviews/welcome" element={<Welcome />} />
+    <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
+    <Route path="/wasabi_reviews/choose" />
+    <Route path="/wasabi_reviews/food" element={<Food />} />
+    <Route path="/wasabi_reviews/staff" element={<Staff />} />
+    <Route path="/wasabi_reviews/other" element={<Other />} />
+    <Route path="/wasabi_reviews/thanks" element={<Thanks />} />
   </Routes>
 );
 

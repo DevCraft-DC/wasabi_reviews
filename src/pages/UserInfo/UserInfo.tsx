@@ -45,7 +45,7 @@ const UserInfo = () => {
         />
       </div>
 
-      <Link to="wasabi_reviews/choose" onClick={saveInLS}>
+      <Link to="/wasabi_reviews/choose" onClick={saveInLS}>
         Далее
       </Link>
     </div>
