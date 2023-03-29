@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import styles from './welcome.module.scss';
+import styles from './home.module.scss';
 
-const Welcome = () => (
+const Home = () => (
   <div>
     <h1 className={styles.title_text}>Добро пожаловать Уважаемые гости</h1>
     <div className={styles.inner_title}>
@@ -13,4 +13,4 @@ const Welcome = () => (
   </div>
 );
 
-export default Welcome;
+export default Home;
