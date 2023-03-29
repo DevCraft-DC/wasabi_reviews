@@ -6,16 +6,21 @@ import Staff from './pages/Staff/Staff';
 import Thanks from './pages/Thanks/Thanks';
 import UserInfo from './pages/UserInfo/UserInfo';
 import Welcome from './pages/Welcome/Welcome';
+import Choose from './pages/Choose/Choose';
+import { Layout } from './components/Layout/Layout';
+import { SearchInput } from './components/SearchInput/SearchInput';
 
 const App = () => (
   <Routes>
-    <Route path="/wasabi_reviews/welcome" element={<Welcome />} />
-    <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
-    <Route path="/wasabi_reviews/choose" />
-    <Route path="/wasabi_reviews/food" element={<Food />} />
-    <Route path="/wasabi_reviews/staff" element={<Staff />} />
-    <Route path="/wasabi_reviews/other" element={<Other />} />
-    <Route path="/wasabi_reviews/thanks" element={<Thanks />} />
+    <Route path="/wasabi_reviews" element={<Layout searchComponent={<SearchInput />} />}>
+      <Route path="/wasabi_reviews" element={<Welcome />} />
+      <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
+      <Route path="/wasabi_reviews/choose" element={<Choose />} />
+      <Route path="/wasabi_reviews/food" element={<Food />} />
+      <Route path="/wasabi_reviews/staff" element={<Staff />} />
+      <Route path="/wasabi_reviews/other" element={<Other />} />
+      <Route path="/wasabi_reviews/thanks" element={<Thanks />} />
+    </Route>
   </Routes>
 );
 

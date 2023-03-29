@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-import styles from './chooseReview.module.scss';
+import styles from './choose.module.scss';
 import { Card } from './components/Card/Card';
 
-const ChooseReview = () => (
+const Choose = () => (
   <>
     <div className={styles.main}>
       <Card content="Блюда" />
@@ -11,8 +11,7 @@ const ChooseReview = () => (
       <Card content="Другое" />
     </div>
     <Link to="#">Назад</Link>
-    <Link to="/wasabi_reviews/food">Далее</Link>
   </>
 );
 
-export default ChooseReview;
+export default Choose;
