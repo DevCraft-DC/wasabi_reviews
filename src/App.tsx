@@ -5,7 +5,7 @@ import Other from './pages/Other/Other';
 import Staff from './pages/Staff/Staff';
 import Thanks from './pages/Thanks/Thanks';
 import UserInfo from './pages/UserInfo/UserInfo';
-import Welcome from './pages/Welcome/Welcome';
+import Home from './pages/Home/Home';
 import Choose from './pages/Choose/Choose';
 import { Layout } from './components/Layout/Layout';
 import { SearchInput } from './components/SearchInput/SearchInput';
@@ -13,7 +13,7 @@ import { SearchInput } from './components/SearchInput/SearchInput';
 const App = () => (
   <Routes>
     <Route path="/wasabi_reviews" element={<Layout searchComponent={<SearchInput />} />}>
-      <Route path="/wasabi_reviews" element={<Welcome />} />
+      <Route path="/wasabi_reviews" element={<Home />} />
       <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
       <Route path="/wasabi_reviews/choose" element={<Choose />} />
       <Route path="/wasabi_reviews/food" element={<Food />} />
