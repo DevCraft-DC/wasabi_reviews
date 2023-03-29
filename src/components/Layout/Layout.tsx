@@ -17,7 +17,7 @@ export const Layout = ({ searchComponent }: LayoutProps) => {
     <div className={styles.layout}>
       <div className={styles.layout_wrapper}>
         <img className={styles.logo} src={logo} alt="logo" />
-        {searchComponent !== undefined && !isFoodPage && searchComponent}
+        {searchComponent !== undefined && isFoodPage && searchComponent}
       </div>
       <Outlet />
     </div>
