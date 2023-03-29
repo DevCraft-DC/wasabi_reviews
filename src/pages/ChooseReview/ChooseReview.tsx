@@ -11,7 +11,7 @@ const ChooseReview = () => (
       <Card content="Другое" />
     </div>
     <Link to="#">Назад</Link>
-    <Link to="/food">Далее</Link>
+    <Link to="/wasabi_reviews/food">Далее</Link>
   </>
 );
 
