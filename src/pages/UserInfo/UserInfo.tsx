@@ -37,6 +37,7 @@ const UserInfo = () => {
       <div className={styles.inputContainer}>
         <input
           type="text"
+          className={styles.lastInputElement}
           placeholder="Ваш номер телефона..."
           value={phoneNumber}
           onChange={(e) => {

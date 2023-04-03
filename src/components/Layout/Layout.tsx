@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
 import styles from './layout.module.scss';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/red_logo.svg';
 
 interface LayoutProps {
   searchComponent?: ReactNode;
