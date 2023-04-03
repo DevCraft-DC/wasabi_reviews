@@ -1,10 +1,10 @@
-import type { ReactNode } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 
 import styles from './button.module.scss';
 
-interface ButtonProps {
+type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
-}
+};
 
 export const Button = ({ children }: ButtonProps) => (
   <button className={styles.button}>{children}</button>
