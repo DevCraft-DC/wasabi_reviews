@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -18,8 +20,14 @@
 html,
 body {
   height: 100%;
-  background-color: rgb(12, 10, 2);
-  color: rgb(217, 217, 217);
+  background-color: $main-color;
+  color: $white-text;
+  letter-spacing: 0.1rem;
+  font-family: 'Izis One', cursive;
+
+  @media (max-width: 400px) {
+    font-size: 13px;
+  }
 }
 /*
   Typographic tweaks!
@@ -68,4 +76,18 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/*
+  10. Define fonts
+*/
+
+@font-face {
+  font-family: 'Izis One';
+  src: url('../fonts/izis_one.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/izis_one.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/izis_one.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/izis_one.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/izis_one.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/izis_one.svg#izis_one') format('svg'); /* Chrome < 4, Legacy iOS */
 }
