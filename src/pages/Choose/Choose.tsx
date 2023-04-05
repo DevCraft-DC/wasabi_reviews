@@ -16,7 +16,7 @@ const Choose = () => {
         <Link to="/wasabi_reviews/food">
           <Card
             onClick={() => {
-              saveCategory('food');
+              saveCategory('Еда');
             }}
             className={styles.choose_card}
           >
@@ -27,7 +27,7 @@ const Choose = () => {
         <Link to="/wasabi_reviews/staff">
           <Card
             onClick={() => {
-              saveCategory('staff');
+              saveCategory('Персонал');
             }}
             className={styles.choose_card}
           >
@@ -38,7 +38,7 @@ const Choose = () => {
         <Link to="/wasabi_reviews/other">
           <Card
             onClick={() => {
-              saveCategory('other');
+              saveCategory('Другое');
             }}
             className={styles.choose_card}
           >
