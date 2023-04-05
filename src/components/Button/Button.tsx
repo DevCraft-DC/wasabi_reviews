@@ -4,8 +4,11 @@ import styles from './button.module.scss';
 
 type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
+  disabled?: boolean;
 };
 
-export const Button = ({ children }: ButtonProps) => (
-  <button className={styles.button}>{children}</button>
+export const Button = ({ children, disabled, ...props }: ButtonProps) => (
+  <button className={styles.button} disabled={disabled} {...props}>
+    {children}
+  </button>
 );
