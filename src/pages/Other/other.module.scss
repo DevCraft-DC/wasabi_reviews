@@ -1,21 +1,24 @@
+@import '../../variables.scss';
+
 .textarea {
   min-height: 100px;
   padding: 10px;
-  border: 1px solid #550f00;
+  border: 1px solid $red-color;
   outline: 0;
-  background-color: #550f00;
-  color: #aa984c;
+  background-color: $red-color;
+  color: $gold-text;
   border-radius: 5px;
   margin-bottom: 10px;
   resize: vertical;
+  font-size: 1.5rem;
 }
 
 .textarea:focus {
-  border: 1px solid #aa984c;
+  border: 1px solid $gold-text;
 }
 
 .textarea::placeholder {
-  color: #aa984c;
+  color: $gold-text;
 }
 
 .buttons {
