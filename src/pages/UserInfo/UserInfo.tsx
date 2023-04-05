@@ -23,7 +23,7 @@ const UserInfo = () => {
         Введите ваши данные <br /> (по желанию)
       </h2>
 
-      <div className={styles.inputContainer}>
+      <div className={styles.input_container}>
         <input
           type="text"
           placeholder="Ваше имя..."
@@ -34,10 +34,10 @@ const UserInfo = () => {
         />
       </div>
 
-      <div className={styles.inputContainer}>
+      <div className={styles.input_container}>
         <input
           type="text"
-          className={styles.lastInputElement}
+          className={styles.last_input_element}
           placeholder="Ваш номер телефона..."
           value={phoneNumber}
           onChange={(e) => {
