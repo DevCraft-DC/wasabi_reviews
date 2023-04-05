@@ -1,9 +1,9 @@
-import { type ReactNode } from 'react';
+import { type HTMLAttributes, type ReactNode } from 'react';
 
-import styles from './card.module.scss';
-
-interface CardProps {
+interface CardProps extends HTMLAttributes<HTMLBodyElement> {
   children: ReactNode;
 }
 
-export const Card = ({ children }: CardProps) => <div className={styles.container}>{children}</div>;
+export const Card = ({ children, className }: CardProps) => (
+  <div className={className}>{children}</div>
+);
