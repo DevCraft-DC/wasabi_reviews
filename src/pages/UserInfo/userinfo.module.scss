@@ -5,22 +5,32 @@
 
   .title {
     font-size: 1.5rem;
+    color: $gold-text;
   }
 }
 
-.inputContainer {
+.input_container {
   input {
-    background-color: $white-text;
-    color: $main-color;
+    background-color: $red-color;
+    color: $gold-text;
     width: 20rem;
     padding: 5px 10px;
     font-size: 1.3rem;
     outline: none;
+    border: 1px solid $red-color;
     margin-top: 1.5rem;
     border-radius: 5px;
+
+    &:focus {
+      border: 1px solid $gold-text;
+    }
+
+    &::placeholder {
+      color: $gold-text;
+    }
   }
 
-  .lastInputElement {
+  .last_input_element {
     margin-bottom: 1rem;
   }
 }
