@@ -1,6 +1,39 @@
+@import '../../variables.scss';
+
 .main {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   align-items: center;
+  gap: 1rem;
+
+  .page_text {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: $gold-text;
+  }
+
+  a {
+    color: $white-text;
+    text-decoration: none;
+  }
+
+  .choose_card {
+    width: 350px;
+    font-size: 1.75rem;
+    padding: 1.5rem;
+    background-color: rgb(19, 17, 17);
+    border: 2px solid $red-color;
+    border-radius: 5px;
+
+    @media (max-width: 450px) {
+      width: 300px;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 350px) {
+      width: 250px;
+    }
+  }
 }
