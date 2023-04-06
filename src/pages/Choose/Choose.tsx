@@ -1,22 +1,24 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './choose.module.scss';
 import { Card } from '../../components/Card/Card';
+import { Button } from '../../components/Button/Button';
+import arrow from '../../assets/arrow-short.svg';
 
 const Choose = () => {
+  const navigate = useNavigate();
   const saveCategory = (catName: string) => {
     localStorage.setItem('category', catName);
   };
 
   return (
-    <>
+    <div className={styles.wrapper}>
+      <h4 className={styles.page_text}>О чём вы хотите оставить отзыв?</h4>
       <div className={styles.main}>
-        <h4 className={styles.page_text}>О чём вы хотите оставить отзыв?</h4>
-
         <Link to="/wasabi_reviews/food">
           <Card
             onClick={() => {
-              saveCategory('food');
+              saveCategory('Еда');
             }}
             className={styles.choose_card}
           >
@@ -27,7 +29,7 @@ const Choose = () => {
         <Link to="/wasabi_reviews/staff">
           <Card
             onClick={() => {
-              saveCategory('staff');
+              saveCategory('Персонал');
             }}
             className={styles.choose_card}
           >
@@ -38,15 +40,23 @@ const Choose = () => {
         <Link to="/wasabi_reviews/other">
           <Card
             onClick={() => {
-              saveCategory('other');
+              saveCategory('Другое');
             }}
             className={styles.choose_card}
           >
             <span>Другое</span>
           </Card>
         </Link>
+        <Button
+          onClick={() => {
+            navigate(-1);
+          }}
+          icon={arrow}
+        >
+          Назад
+        </Button>
       </div>
-    </>
+    </div>
   );
 };
 

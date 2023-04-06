@@ -1,8 +1,16 @@
-.title_text {
-  text-align: center;
+.page_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    align-self: flex-end;
+  }
 }
 
-.inner_title {
+.text_wrapper {
   text-align: center;
-  margin-top: 30px;
+
+  p {
+    margin: 30px 0;
+  }
 }

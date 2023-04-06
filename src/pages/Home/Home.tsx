@@ -1,18 +1,22 @@
-import { Link } from 'react-router-dom';
-
 import styles from './home.module.scss';
+import { LinkButton } from '../../components/LinkButton/LinkButton';
+import arrow from '../../assets/arrow-short.svg';
 
 const Home = () => (
-  <div>
-    <h1 className={styles.title_text}>
-      Добро пожаловать,
-      <br /> Уважаемые гости!
-    </h1>
-    <div className={styles.inner_title}>
-      Нам важно ваше мнение, поэтому создали книгу жалоб и предложений. Пожалуйста, выразите свои
-      мысли и пожелания. Мы обязательно прочтем каждую запись и улучшим качество обслуживания.
+  <div className={styles.page_wrapper}>
+    <div className={styles.text_wrapper}>
+      <h1>
+        Добро пожаловать,
+        <br /> Уважаемые гости!
+      </h1>
+      <p>
+        Нам важно ваше мнение, поэтому создали книгу жалоб и предложений. Пожалуйста, выразите свои
+        мысли и пожелания. Мы обязательно прочтем каждую запись и улучшим качество обслуживания.
+      </p>
     </div>
-    <Link to="/wasabi_reviews/userinfo">Далее</Link>
+    <LinkButton to="/wasabi_reviews/userinfo" icon={arrow}>
+      Далее
+    </LinkButton>
   </div>
 );
 
