@@ -15,9 +15,11 @@ const Food = () => (
 
     <div className={styles.cards_container}>
       {food.map((food) => (
-        <Card key={food.title} className={styles.staff_card}>
+        <Card key={food.title} className={styles.dish_card}>
           <img src={food.image} alt={food.title} />
-          <p>{food.title}</p>
+          <div className={styles.data}>
+            <p>{food.title}</p>
+          </div>
         </Card>
       ))}
     </div>
