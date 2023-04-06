@@ -24,7 +24,7 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const phone = getValueFromLS('phone number');
   const category = getValueFromLS('category');
 
-  const template = createTemplate({ username, phone, review, category, name: 'Бургер' });
+  const template = createTemplate({ username, phone, review, category, target: 'Бургер' });
 
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
@@ -35,8 +35,14 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
     setReview('');
   };
 
+  const cancellation = () => {
+    localStorage.removeItem('target');
+    removeModal();
+    setReview('');
+  };
+
   return (
-    <div className={styles.modal} style={{ display: `${show ? 'block' : 'none'}` }}>
+    <div className={show ? styles.modalShow : styles.modalHide}>
       <div className={styles.modal_content}>
         <p className={styles.name}>
           Оставить отзыв о:
@@ -56,8 +62,7 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
         <div className={styles.buttons}>
           <Button
             onClick={() => {
-              localStorage.removeItem('target');
-              removeModal();
+              cancellation();
             }}
           >
             Отменить

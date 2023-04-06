@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
-.modal {
+.modalShow {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,6 +11,10 @@
   background-color: rgba(18, 18, 18, 0.95);
   align-items: center;
   justify-content: center;
+}
+
+.modalHide {
+  display: none;
 }
 
 .modal_content {
