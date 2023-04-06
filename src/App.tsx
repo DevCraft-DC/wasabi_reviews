@@ -8,11 +8,10 @@ import UserInfo from './pages/UserInfo/UserInfo';
 import Home from './pages/Home/Home';
 import Choose from './pages/Choose/Choose';
 import { Layout } from './components/Layout/Layout';
-import { SearchInput } from './components/SearchInput/SearchInput';
 
 const App = () => (
   <Routes>
-    <Route path="/wasabi_reviews" element={<Layout searchComponent={<SearchInput />} />}>
+    <Route path="/wasabi_reviews" element={<Layout />}>
       <Route path="/wasabi_reviews" element={<Home />} />
       <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
       <Route path="/wasabi_reviews/choose" element={<Choose />} />
