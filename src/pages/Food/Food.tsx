@@ -1,5 +1,23 @@
 import styles from './food.module.scss';
+import food from '../../assets/food.json';
 
-const Food = () => <h1 className={styles.remove}>Food Page</h1>;
+import { Card } from '@/components/Card/Card';
+
+const Food = () => (
+  <div className={styles.page_container}>
+    <h4 className={styles.pageText}>
+      Выберите блюдо из наешго меню,
+      <br /> которое хотели бы оценить:
+    </h4>
+    <div className={styles.cardsContainer}>
+      {food.map((food) => (
+        <Card key={food.title} className={styles.staffCard}>
+          <img src={food.image} alt={food.title} />
+          <p>{food.title}</p>
+        </Card>
+      ))}
+    </div>
+  </div>
+);
 
 export default Food;
