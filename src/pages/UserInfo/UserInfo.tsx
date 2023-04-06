@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { Link } from 'react-router-dom';
-
 import styles from './userinfo.module.scss';
+import { LinkButton } from '../../components/LinkButton/LinkButton';
+import arrow from '../../assets/arrow-short.svg';
 
 const UserInfo = () => {
   const [name, setName] = useState('');
@@ -46,9 +46,9 @@ const UserInfo = () => {
         />
       </div>
 
-      <Link to="/wasabi_reviews/choose" onClick={saveInLS}>
+      <LinkButton to="/wasabi_reviews/choose" onClick={saveInLS} icon={arrow}>
         Далее
-      </Link>
+      </LinkButton>
     </div>
   );
 };
