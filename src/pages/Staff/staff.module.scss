@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .page_container {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .page_text {
@@ -70,6 +70,7 @@
 
   h3 {
     font-size: 1rem;
+    letter-spacing: normal;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
