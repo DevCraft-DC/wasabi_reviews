@@ -23,6 +23,7 @@ const Choose = () => {
             className={styles.choose_card}
           >
             <span>Еда</span>
+            <Button>Выбрать</Button>
           </Card>
         </Link>
 
@@ -34,6 +35,7 @@ const Choose = () => {
             className={styles.choose_card}
           >
             <span>Персонал</span>
+            <Button>Выбрать</Button>
           </Card>
         </Link>
 
@@ -45,6 +47,7 @@ const Choose = () => {
             className={styles.choose_card}
           >
             <span>Другое</span>
+            <Button>Выбрать</Button>
           </Card>
         </Link>
         <Button
