@@ -23,14 +23,14 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const username = getValueFromLS('name');
   const phone = getValueFromLS('phone number');
   const category = getValueFromLS('category');
+  const target = getValueFromLS('target');
 
-  const template = createTemplate({ username, phone, review, category, target: 'Бургер' });
+  const template = createTemplate({ username, phone, review, category, target });
 
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
   const sendMessage = () => {
     navigate('/wasabi_reviews/thanks');
-    localStorage.clear();
     void fetch(url);
     setReview('');
   };
