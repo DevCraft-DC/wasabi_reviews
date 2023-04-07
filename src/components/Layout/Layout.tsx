@@ -6,7 +6,7 @@ import styles from './layout.module.scss';
 import logo from '../../assets/red-logo.png';
 import { ScrollToTop } from '../ScrollToTop/ScrollToTop';
 
-const SHOW_SCROLL_TO_TOP = 600;
+const SHOW_SCROLL_TO_TOP = 400;
 
 export const Layout = () => {
   const [windowScroll, setWindowScroll] = useState(window.scrollY);
