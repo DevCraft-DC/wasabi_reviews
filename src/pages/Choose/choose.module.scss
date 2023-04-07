@@ -35,6 +35,9 @@
   }
 
   .choose_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.75rem;
     padding: 1.5rem;
     background-color: rgb(19, 17, 17);
@@ -44,6 +47,10 @@
     @media (max-width: 450px) {
       padding: 1rem;
       font-size: 1.5rem;
+    }
+
+    button {
+      font-size: inherit;
     }
   }
 }
