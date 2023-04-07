@@ -1,11 +1,29 @@
+@import '../../variables.scss';
+
 .search_wrapper {
   position: relative;
+  text-align: center;
 }
 
 .search_input {
   width: 100%;
-  padding: 5px 15px;
+  height: 50px;
+
+  @media (max-width: 400px) {
+    height: 40px;
+  }
+
+  padding-left: 15px;
+  padding-right: 35px;
   border-radius: 5px;
+  outline: none;
+  background-color: $red-color;
+  color: $gold-text;
+  border: 1px solid $red-color;
+
+  &:focus {
+    border: 1px solid $gold-text;
+  }
 }
 
 .search_icon {
