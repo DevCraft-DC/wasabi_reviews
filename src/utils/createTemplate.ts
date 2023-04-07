@@ -3,14 +3,19 @@ interface TemplateValues {
   phone: string | null;
   review: string;
   category: string | null;
-  target: string;
+  target: string | null;
 }
 
 export const createTemplate = ({ username, phone, review, category, target }: TemplateValues) => {
-  const whichCategory =
-    category === 'Другое'
-      ? `- Категория: ${category !== null ? category : ''}%0A- Текст: ${review}`
-      : `- Категория: ${category !== null ? category : ''}%0A- Имя: ${target}%0A- Текст: ${review}`;
+  const food = `- Категория: Еда %0A- Наименование: ${
+    target !== null ? target : ''
+  }%0A- Текст: ${review}`;
+  const staff = `- Категория: Персонал %0A- Имя: ${
+    target !== null ? target : ''
+  }%0A- Текст: ${review}`;
+  const other = `- Категория: Другое %0A- Текст: ${review}`;
+
+  const whichCategory = category === 'Другое' ? other : category === 'Еда' ? food : staff;
 
   return `Отправитель: %0A- Имя: ${
     username !== null ? username : 'не указано'

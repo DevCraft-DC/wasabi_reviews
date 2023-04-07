@@ -11,9 +11,13 @@ const UserInfo = () => {
   const saveInLS = () => {
     if (name !== '') {
       localStorage.setItem('name', name);
+    } else {
+      localStorage.removeItem('name');
     }
     if (phoneNumber !== '') {
       localStorage.setItem('phone number', phoneNumber);
+    } else {
+      localStorage.removeItem('phone number');
     }
   };
 

@@ -16,8 +16,9 @@ const Other = () => {
   const username = getValueFromLS('name');
   const phone = getValueFromLS('phone number');
   const category = getValueFromLS('category');
+  const target = getValueFromLS('target');
 
-  const template = createTemplate({ username, phone, review, category, target: 'Бургер' });
+  const template = createTemplate({ username, phone, review, category, target });
 
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
