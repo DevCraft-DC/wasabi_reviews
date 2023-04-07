@@ -54,3 +54,10 @@
     text-overflow: ellipsis;
   }
 }
+
+.not_found_text {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  color: $gold-text;
+}

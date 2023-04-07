@@ -37,22 +37,26 @@ const Food = () => {
 
       <SearchInput searchText={searchText} setSearchText={setSearchText} />
 
-      <div className={styles.cards_container}>
-        {filteredFood.map((food) => (
-          <Card
-            onClick={() => {
-              showModal(food.title);
-            }}
-            key={food.title}
-            className={styles.dish_card}
-          >
-            <img src={food.image} alt={food.title} />
-            <div className={styles.data}>
-              <h3>{food.title}</h3>
-            </div>
-          </Card>
-        ))}
-      </div>
+      {filteredFood.length > 0 ? (
+        <div className={styles.cards_container}>
+          {filteredFood.map((food) => (
+            <Card
+              onClick={() => {
+                showModal(food.title);
+              }}
+              key={food.title}
+              className={styles.dish_card}
+            >
+              <img src={food.image} alt={food.title} />
+              <div className={styles.data}>
+                <h3>{food.title}</h3>
+              </div>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <p className={styles.not_found_text}>Ничего не найдено!</p>
+      )}
     </div>
   );
 };
