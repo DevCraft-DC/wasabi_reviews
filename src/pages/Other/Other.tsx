@@ -24,6 +24,7 @@ const Other = () => {
 
   const sendMessage = () => {
     if (review.match(/[#&+/\\]/g) === null) {
+      navigate('/wasabi_reviews/thanks');
       void fetch(url);
       setReview('');
     }
