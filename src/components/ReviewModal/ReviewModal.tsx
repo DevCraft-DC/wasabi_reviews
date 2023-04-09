@@ -30,9 +30,11 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
   const sendMessage = () => {
-    navigate('/wasabi_reviews/thanks');
-    void fetch(url);
-    setReview('');
+    if (review.match(/[#&+/\\]/g) === null) {
+      navigate('/wasabi_reviews/thanks');
+      void fetch(url);
+      setReview('');
+    }
   };
 
   const cancellation = () => {

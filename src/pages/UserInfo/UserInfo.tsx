@@ -9,12 +9,12 @@ const UserInfo = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
 
   const saveInLS = () => {
-    if (name !== '') {
+    if (name !== '' && name.match(/[#&+/\\]/g) === null) {
       localStorage.setItem('name', name);
     } else {
       localStorage.removeItem('name');
     }
-    if (phoneNumber !== '') {
+    if (phoneNumber !== '' && phoneNumber.match(/\b\d[/\\#&]\b/g) !== null) {
       localStorage.setItem('phone number', phoneNumber);
     } else {
       localStorage.removeItem('phone number');

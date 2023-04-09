@@ -23,8 +23,10 @@ const Other = () => {
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
   const sendMessage = () => {
-    void fetch(url);
-    setReview('');
+    if (review.match(/[#&+/\\]/g) === null) {
+      void fetch(url);
+      setReview('');
+    }
   };
 
   return (
