@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import styles from './userinfo.module.scss';
 import { LinkButton } from '../../components/LinkButton/LinkButton';
-import arrow from '../../assets/arrow-short.svg';
 
 const UserInfo = () => {
   const [name, setName] = useState('');
@@ -50,7 +49,7 @@ const UserInfo = () => {
         />
       </div>
 
-      <LinkButton to="/wasabi_reviews/choose" onClick={saveInLS} icon={arrow}>
+      <LinkButton to="/wasabi_reviews/choose" onClick={saveInLS}>
         Далее
       </LinkButton>
     </div>

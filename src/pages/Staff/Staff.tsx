@@ -1,14 +1,18 @@
 import { useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 import styles from './staff.module.scss';
 import staff from '../../assets/staff.json';
 
 import { Card } from '@/components/Card/Card';
 import { ReviewModal } from '@/components/ReviewModal/ReviewModal';
+import { Button } from '@/components/Button/Button';
 
 const Staff = () => {
   const [modal, setModal] = useState(false);
   const [name, setName] = useState('');
+  const navigate = useNavigate();
 
   const showModal = (memberName: string) => {
     setModal(true);
@@ -46,6 +50,13 @@ const Staff = () => {
           </Card>
         ))}
       </div>
+      <Button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Назад
+      </Button>
     </div>
   );
 };

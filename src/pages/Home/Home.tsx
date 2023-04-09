@@ -1,6 +1,5 @@
 import styles from './home.module.scss';
 import { LinkButton } from '../../components/LinkButton/LinkButton';
-import arrow from '../../assets/arrow-short.svg';
 
 const Home = () => (
   <div className={styles.page_wrapper}>
@@ -14,9 +13,7 @@ const Home = () => (
         мысли и пожелания. Мы обязательно прочтем каждую запись и улучшим качество обслуживания.
       </p>
     </div>
-    <LinkButton to="/wasabi_reviews/userinfo" icon={arrow}>
-      Далее
-    </LinkButton>
+    <LinkButton to="/wasabi_reviews/userinfo">Далее</LinkButton>
   </div>
 );
 
