@@ -1,16 +1,20 @@
 import { useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 import styles from './food.module.scss';
 import food from '../../assets/food.json';
 
 import { SearchInput } from '@/components/SearchInput/SearchInput';
 import { ReviewModal } from '@/components/ReviewModal/ReviewModal';
 import { Card } from '@/components/Card/Card';
+import { Button } from '@/components/Button/Button';
 
 const Food = () => {
   const [searchText, setSearchText] = useState('');
   const [modal, setModal] = useState(false);
   const [title, setTitle] = useState('');
+  const navigate = useNavigate();
 
   const showModal = (foodTitle: string) => {
     setModal(true);
@@ -57,6 +61,13 @@ const Food = () => {
       ) : (
         <p className={styles.not_found_text}>Ничего не найдено!</p>
       )}
+      <Button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        Назад
+      </Button>
     </div>
   );
 };

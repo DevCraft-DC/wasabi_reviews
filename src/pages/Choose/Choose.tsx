@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import styles from './choose.module.scss';
 import { Card } from '../../components/Card/Card';
 import { Button } from '../../components/Button/Button';
-import arrow from '../../assets/arrow-short.svg';
 
 const Choose = () => {
   const navigate = useNavigate();
@@ -54,7 +53,6 @@ const Choose = () => {
           onClick={() => {
             navigate(-1);
           }}
-          icon={arrow}
         >
           Назад
         </Button>
