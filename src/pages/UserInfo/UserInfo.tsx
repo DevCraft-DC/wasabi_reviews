@@ -13,7 +13,7 @@ const UserInfo = () => {
     } else {
       localStorage.removeItem('name');
     }
-    if (phoneNumber !== '' && phoneNumber.match(/\b\d[/\\#&]\b/g) !== null) {
+    if (phoneNumber !== '' && phoneNumber.match(/\b(?!.*[abc#&])\d+/g) !== null) {
       localStorage.setItem('phone number', phoneNumber);
     } else {
       localStorage.removeItem('phone number');
