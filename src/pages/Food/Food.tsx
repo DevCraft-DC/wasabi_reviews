@@ -35,9 +35,7 @@ const Food = () => {
           setModal(false);
         }}
       />
-      <h4 className={styles.page_text}>
-        Выберите блюдо из нашего меню, которое хотели бы оценить:
-      </h4>
+      <h4 className={styles.page_text}>Выберите блюдо, которое хотите оценить:</h4>
 
       <SearchInput searchText={searchText} setSearchText={setSearchText} />
 
@@ -63,7 +61,7 @@ const Food = () => {
       )}
       <Button
         onClick={() => {
-          navigate(-1);
+          navigate('/wasabi_reviews/choose');
         }}
       >
         Назад

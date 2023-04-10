@@ -12,7 +12,7 @@ const Choose = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h4 className={styles.page_text}>О чём вы хотите оставить отзыв?</h4>
+      <h4 className={styles.page_text}>Выберите категорию:</h4>
       <div className={styles.main}>
         <Link to="/wasabi_reviews/food" className={styles.card_container}>
           <Card
@@ -51,7 +51,7 @@ const Choose = () => {
         </Link>
         <Button
           onClick={() => {
-            navigate(-1);
+            navigate('/wasabi_reviews/userinfo');
           }}
         >
           Назад

@@ -46,7 +46,7 @@ const Other = () => {
       <div className={styles.buttons}>
         <Button
           onClick={() => {
-            navigate(-1);
+            navigate('/wasabi_reviews/choose');
           }}
         >
           Назад
