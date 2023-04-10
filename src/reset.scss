@@ -23,7 +23,7 @@ body {
   background-color: $main-color;
   color: $white-text;
   letter-spacing: 0.1rem;
-  font-family: 'Izis One', cursive;
+  font-family: 'Philosopher Regular', cursive;
   font-size: 20px;
 
   @media (max-width: 400px) {
@@ -90,11 +90,6 @@ h6 {
 */
 
 @font-face {
-  font-family: 'Izis One';
-  src: url('../fonts/izis_one.eot'); /* IE 9 Compatibility Mode */
-  src: url('../fonts/izis_one.eot?#iefix') format('embedded-opentype'),
-    /* IE < 9 */ url('../fonts/izis_one.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('../fonts/izis_one.woff') format('woff'),
-    /* Firefox >= 3.6, any other modern browser */ url('../fonts/izis_one.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('../fonts/izis_one.svg#izis_one') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: 'Philosopher Regular';
+  src: url('../fonts/Philosopher_Regular.ttf');
 }

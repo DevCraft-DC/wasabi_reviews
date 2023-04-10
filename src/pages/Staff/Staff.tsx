@@ -29,10 +29,7 @@ const Staff = () => {
           setModal(false);
         }}
       />
-      <h4 className={styles.page_text}>
-        Выберите члена нашей команды,
-        <br /> которого вы хотите оценить:
-      </h4>
+      <h4 className={styles.page_text}>Выберите работника, которого хотите оценить:</h4>
       <div className={styles.cards_container}>
         {staff.map((member) => (
           <Card
@@ -52,7 +49,7 @@ const Staff = () => {
       </div>
       <Button
         onClick={() => {
-          navigate(-1);
+          navigate('/wasabi_reviews/choose');
         }}
       >
         Назад
