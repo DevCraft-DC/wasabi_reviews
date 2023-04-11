@@ -24,8 +24,9 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const phone = getValueFromLS('phone number');
   const category = getValueFromLS('category');
   const target = getValueFromLS('target');
+  const email = getValueFromLS('email');
 
-  const template = createTemplate({ username, phone, review, category, target });
+  const template = createTemplate({ username, phone, email, review, category, target });
 
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
 
