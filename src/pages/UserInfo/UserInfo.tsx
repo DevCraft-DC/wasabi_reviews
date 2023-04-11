@@ -10,6 +10,16 @@ const UserInfo = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
 
+  function handleNameInput(value: string) {
+    const formattedName = value.replace(/[^a-zA-Z0-9\u0400-\u04FF-"' ]/, '');
+    setName(formattedName);
+  }
+
+  function handleEmailInput(value: string) {
+    const formattedEmail = value.replace(/[^a-zA-Z0-9._%+~*!-@]/, '');
+    setEmail(formattedEmail);
+  }
+
   const saveInLS = () => {
     if (name !== '' && name.match(/[#&+/\\]/g) === null) {
       localStorage.setItem('name', name);
@@ -42,13 +52,17 @@ const UserInfo = () => {
           placeholder="Ваше имя..."
           value={name}
           onChange={(e) => {
-            setName(e.target.value);
+            handleNameInput(e.target.value);
           }}
         />
       </div>
 
       <div className={styles.input_container}>
-        <PhoneInput phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber} />
+        <PhoneInput
+          className={styles.phone_input}
+          phoneNumber={phoneNumber}
+          setPhoneNumber={setPhoneNumber}
+        />
       </div>
 
       <div className={styles.input_container}>
@@ -58,7 +72,7 @@ const UserInfo = () => {
           placeholder="Ваша электронная почта..."
           value={email}
           onChange={(e) => {
-            setEmail(e.target.value);
+            handleEmailInput(e.target.value);
           }}
         />
       </div>
