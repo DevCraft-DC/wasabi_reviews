@@ -1,17 +1,20 @@
-interface PhoneIntupProps {
+import { type HTMLAttributes } from 'react';
+
+interface PhoneIntupProps extends HTMLAttributes<HTMLInputElement> {
   phoneNumber: string;
   setPhoneNumber: (arg0: string) => void;
 }
 
-export default function PhoneInput({ phoneNumber, setPhoneNumber }: PhoneIntupProps) {
-  const handleInput = (e: string) => {
-    const formattedPhoneNumber = formatPhoneNumber(e);
+export default function PhoneInput({ phoneNumber, setPhoneNumber, className }: PhoneIntupProps) {
+  const handleInput = (value: string) => {
+    const formattedPhoneNumber = formatPhoneNumber(value);
     setPhoneNumber(formattedPhoneNumber);
   };
 
   return (
     <input
-      maxLength={15}
+      className={className}
+      type="tel"
       onChange={(e) => {
         handleInput(e.target.value);
       }}
@@ -39,8 +42,13 @@ function formatPhoneNumber(value: string) {
       7
     )}-${phoneNumber.slice(7, 10)}`;
   }
-  return `${phoneNumber.slice(0, 1)} ${phoneNumber.slice(1, 4)} ${phoneNumber.slice(
-    4,
-    7
-  )}-${phoneNumber.slice(7, 9)}-${phoneNumber.slice(9)}`;
+
+  if (phoneNumberLength < 12) {
+    return `${phoneNumber.slice(0, 1)} ${phoneNumber.slice(1, 4)} ${phoneNumber.slice(
+      4,
+      7
+    )}-${phoneNumber.slice(7, 9)}-${phoneNumber.slice(9)}`;
+  }
+
+  return phoneNumber;
 }

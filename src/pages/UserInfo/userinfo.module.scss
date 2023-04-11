@@ -43,4 +43,12 @@
   .last_input_element {
     margin-bottom: 1rem;
   }
+
+  .phone_input {
+    letter-spacing: 0.2rem;
+
+    &::placeholder {
+      letter-spacing: 0;
+    }
+  }
 }
