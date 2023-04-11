@@ -3,9 +3,12 @@ import { useState } from 'react';
 import styles from './userinfo.module.scss';
 import { LinkButton } from '../../components/LinkButton/LinkButton';
 
+import PhoneInput from '@/components/PhoneInput/PhoneInput';
+
 const UserInfo = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
 
   const saveInLS = () => {
     if (name !== '' && name.match(/[#&+/\\]/g) === null) {
@@ -13,10 +16,15 @@ const UserInfo = () => {
     } else {
       localStorage.removeItem('name');
     }
-    if (phoneNumber !== '' && phoneNumber.match(/\b(?!.*[abc#&])\d+/g) !== null) {
+    if (phoneNumber !== '') {
       localStorage.setItem('phone number', phoneNumber);
     } else {
       localStorage.removeItem('phone number');
+    }
+    if (email !== '') {
+      localStorage.setItem('email', email);
+    } else {
+      localStorage.removeItem('email');
     }
   };
 
@@ -28,6 +36,8 @@ const UserInfo = () => {
 
       <div className={styles.input_container}>
         <input
+          className={styles.first_input_element}
+          maxLength={40}
           type="text"
           placeholder="Ваше имя..."
           value={name}
@@ -38,13 +48,17 @@ const UserInfo = () => {
       </div>
 
       <div className={styles.input_container}>
+        <PhoneInput phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber} />
+      </div>
+
+      <div className={styles.input_container}>
         <input
-          type="tel"
           className={styles.last_input_element}
-          placeholder="Ваш номер телефона..."
-          value={phoneNumber}
+          type="email"
+          placeholder="Ваша электронная почта..."
+          value={email}
           onChange={(e) => {
-            setPhoneNumber(e.target.value);
+            setEmail(e.target.value);
           }}
         />
       </div>

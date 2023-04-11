@@ -24,7 +24,7 @@
     font-size: 1.3rem;
     outline: none;
     border: 1px solid $red-color;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
 
     &:focus {
@@ -36,7 +36,11 @@
     }
   }
 
+  .first_input_element {
+    margin-top: 1.5rem;
+  }
+
   .last_input_element {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
   }
 }
