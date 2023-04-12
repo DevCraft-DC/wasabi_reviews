@@ -11,6 +11,25 @@
   color: $gold-text;
 }
 
+.back_button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  border: 0;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 4px 8px;
+  background-color: $red-color;
+  color: $gold-text;
+
+  img {
+    width: 1.9rem;
+  }
+}
+
 .cards_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
