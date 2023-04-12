@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './food.module.scss';
 import food from '../../assets/food.json';
+import arrow from '../../assets/arrow-short.svg';
 
 import { SearchInput } from '@/components/SearchInput/SearchInput';
 import { ReviewModal } from '@/components/ReviewModal/ReviewModal';
 import { Card } from '@/components/Card/Card';
-import { Button } from '@/components/Button/Button';
 
 const Food = () => {
   const [searchText, setSearchText] = useState('');
@@ -35,6 +35,14 @@ const Food = () => {
           setModal(false);
         }}
       />
+      <button
+        className={styles.back_button}
+        onClick={() => {
+          navigate('/wasabi_reviews/choose');
+        }}
+      >
+        <img className={styles.arrow_icon} src={arrow} alt="back arrow" />
+      </button>
       <h4 className={styles.page_text}>Выберите блюдо, которое хотите оценить:</h4>
 
       <SearchInput searchText={searchText} setSearchText={setSearchText} />
@@ -59,13 +67,6 @@ const Food = () => {
       ) : (
         <p className={styles.not_found_text}>Ничего не найдено!</p>
       )}
-      <Button
-        onClick={() => {
-          navigate('/wasabi_reviews/choose');
-        }}
-      >
-        Назад
-      </Button>
     </div>
   );
 };

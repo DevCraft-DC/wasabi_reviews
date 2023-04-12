@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './staff.module.scss';
 import staff from '../../assets/staff.json';
+import arrow from '../../assets/arrow-short.svg';
 
 import { Card } from '@/components/Card/Card';
 import { ReviewModal } from '@/components/ReviewModal/ReviewModal';
-import { Button } from '@/components/Button/Button';
 
 const Staff = () => {
   const [modal, setModal] = useState(false);
@@ -29,6 +29,14 @@ const Staff = () => {
           setModal(false);
         }}
       />
+      <button
+        className={styles.back_button}
+        onClick={() => {
+          navigate('/wasabi_reviews/choose');
+        }}
+      >
+        <img className={styles.arrow_icon} src={arrow} alt="back arrow" />
+      </button>
       <h4 className={styles.page_text}>Выберите работника, которого хотите оценить:</h4>
       <div className={styles.cards_container}>
         {staff.map((member) => (
@@ -47,13 +55,6 @@ const Staff = () => {
           </Card>
         ))}
       </div>
-      <Button
-        onClick={() => {
-          navigate('/wasabi_reviews/choose');
-        }}
-      >
-        Назад
-      </Button>
     </div>
   );
 };
