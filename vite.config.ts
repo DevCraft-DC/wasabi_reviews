@@ -9,7 +9,7 @@ export default defineConfig({
   base: '/wasabi_reviews/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src'),
     }
   }
 });

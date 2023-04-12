@@ -36,7 +36,7 @@ const Staff = () => {
             onClick={() => {
               showModal(member.name);
             }}
-            key={member.name}
+            key={member.id}
             className={styles.staff_card}
           >
             <img src={member.image} alt={member.name} />
