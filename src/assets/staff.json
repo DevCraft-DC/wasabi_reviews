@@ -2,7 +2,7 @@
   {
     "name": "Лайла",
     "position": "Хостес",
-    "image": "/staff-imgs/leyla.jpg",
+    "image": "/wasabi_reviews/staff-imgs/leyla.jpg",
     "id": 1
   },
   {
@@ -14,37 +14,37 @@
   {
     "name": "Муса",
     "position": "Официант",
-    "image": "/staff-imgs/musa.jpg",
+    "image": "/wasabi_reviews/staff-imgs/musa.jpg",
     "id": 3
   },
   {
     "name": "Марета",
     "position": "Официантка",
-    "image": "/staff-imgs/mareta.jpg",
+    "image": "/wasabi_reviews/staff-imgs/mareta.jpg",
     "id": 4
   },
   {
     "name": "Муслим",
     "position": "Официант",
-    "image": "/staff-imgs/muslim.jpg",
+    "image": "/wasabi_reviews/staff-imgs/muslim.jpg",
     "id": 5
   },
   {
     "name": "Рахман",
     "position": "Официант",
-    "image": "/staff-imgs/rahman.jpg",
+    "image": "/wasabi_reviews/staff-imgs/rahman.jpg",
     "id": 6
   },
   {
     "name": "Рустам",
     "position": "Официант",
-    "image": "/staff-imgs/rustam.jpg",
+    "image": "/wasabi_reviews/staff-imgs/rustam.jpg",
     "id": 7
   },
   {
     "name": "София",
     "position": "Официантка",
-    "image": "/staff-imgs/sophia.jpg",
+    "image": "/wasabi_reviews/staff-imgs/sophia.jpg",
     "id": 8
   }
 ]
