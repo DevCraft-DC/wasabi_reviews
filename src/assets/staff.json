@@ -46,5 +46,11 @@
     "position": "Официантка",
     "image": "/wasabi_reviews/staff-imgs/sophia.jpg",
     "id": 8
+  },
+  {
+    "name": "Мадина",
+    "position": "Официантка",
+    "image": "/wasabi_reviews/staff-imgs/madina.jpg",
+    "id": 9
   }
 ]
