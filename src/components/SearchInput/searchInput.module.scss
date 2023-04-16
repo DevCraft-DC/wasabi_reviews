@@ -24,6 +24,10 @@
   &:focus {
     border: 1px solid $gold-text;
   }
+
+  &::placeholder {
+    color: $gold-text;
+  }
 }
 
 .search_icon {
