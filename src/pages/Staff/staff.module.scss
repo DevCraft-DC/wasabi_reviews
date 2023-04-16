@@ -33,24 +33,14 @@
 .cards_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  gap: 1rem;
   place-items: center;
   max-width: 700px;
   margin-bottom: 1.5rem;
-
-  @media (min-width: 550px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .staff_card {
   width: 100%;
-
-  @media (max-width: 550px) and (min-width: 450px) {
-    width: 90%;
-  }
-
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
