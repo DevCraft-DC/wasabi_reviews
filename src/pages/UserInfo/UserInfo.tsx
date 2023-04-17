@@ -15,13 +15,8 @@ const UserInfo = () => {
     setName(formattedName);
   }
 
-  function handleEmailInput(value: string) {
-    const formattedEmail = value.replace(/[^a-zA-Z0-9._%+~*!-@]/, '');
-    setEmail(formattedEmail);
-  }
-
   const saveInLS = () => {
-    if (name !== '' && name.match(/[#&+/\\]/g) === null) {
+    if (name !== '') {
       localStorage.setItem('name', name);
     } else {
       localStorage.removeItem('name');
@@ -72,7 +67,7 @@ const UserInfo = () => {
           placeholder="Ваша электронная почта..."
           value={email}
           onChange={(e) => {
-            handleEmailInput(e.target.value);
+            setEmail(e.target.value);
           }}
         />
       </div>

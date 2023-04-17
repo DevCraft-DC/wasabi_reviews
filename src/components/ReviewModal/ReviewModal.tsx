@@ -27,15 +27,13 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const email = getValueFromLS('email');
 
   const template = createTemplate({ username, phone, email, review, category, target });
-
-  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${template}`;
+  const encoded = encodeURIComponent(template);
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encoded}`;
 
   const sendMessage = () => {
-    if (review.match(/[#&+/\\]/g) === null) {
-      navigate('/wasabi_reviews/thanks');
-      void fetch(url);
-      setReview('');
-    }
+    navigate('/wasabi_reviews/thanks');
+    void fetch(url);
+    setReview('');
   };
 
   const cancellation = () => {
