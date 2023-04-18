@@ -8,9 +8,6 @@ import styles from './reviewmodal.module.scss';
 import { getValueFromLS } from '@/utils/getValueFromLS';
 import { createTemplate } from '@/utils/createTemplate';
 
-const token = '6217522529:AAHSeO_K1sy7NlTC0aLPmn_m6XQaDrnn_Ls';
-const chatId = '-822673453';
-
 interface ReviewModalProps {
   reviewTarget: string;
   show: boolean;
@@ -28,11 +25,20 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
 
   const template = createTemplate({ username, phone, email, review, category, target });
   const encoded = encodeURIComponent(template);
-  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encoded}`;
+
+  const sendReview = () => {
+    void fetch('https://wasabi-backend.onrender.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ review: encoded })
+    });
+  };
 
   const sendMessage = () => {
     navigate('/wasabi_reviews/thanks');
-    void fetch(url);
+    sendReview();
     setReview('');
   };
 
