@@ -38,7 +38,7 @@ const Food = () => {
       <button
         className={styles.back_button}
         onClick={() => {
-          navigate('/wasabi_reviews/choose');
+          navigate('/choose');
         }}
       >
         <img className={styles.arrow_icon} src={arrow} alt="back arrow" />

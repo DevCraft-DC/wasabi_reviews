@@ -24,7 +24,7 @@ const Other = () => {
   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encoded}`;
 
   const sendMessage = () => {
-    navigate('/wasabi_reviews/thanks');
+    navigate('/thanks');
     void fetch(url);
     setReview('');
   };
@@ -45,7 +45,7 @@ const Other = () => {
       <div className={styles.buttons}>
         <Button
           onClick={() => {
-            navigate('/wasabi_reviews/choose');
+            navigate('/choose');
           }}
         >
           Назад

@@ -14,7 +14,7 @@ const Home = () => (
         жалобу или предложение, и принять меры, чтобы улучшить наш сервис и обслуживание.
       </p>
     </div>
-    <LinkButton to="/wasabi_reviews/userinfo">Далее</LinkButton>
+    <LinkButton to="/userinfo">Далее</LinkButton>
   </div>
 );
 

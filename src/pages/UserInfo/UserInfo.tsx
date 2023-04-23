@@ -72,7 +72,7 @@ const UserInfo = () => {
         />
       </div>
 
-      <LinkButton to="/wasabi_reviews/choose" onClick={saveInLS}>
+      <LinkButton to="/choose" onClick={saveInLS}>
         Далее
       </LinkButton>
     </div>

@@ -37,7 +37,7 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   };
 
   const sendMessage = () => {
-    navigate('/wasabi_reviews/thanks');
+    navigate('/thanks');
     sendReview();
     setReview('');
   };

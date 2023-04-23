@@ -11,14 +11,14 @@ import { Layout } from './components/Layout/Layout';
 
 const App = () => (
   <Routes>
-    <Route path="/wasabi_reviews" element={<Layout />}>
-      <Route path="/wasabi_reviews" element={<Home />} />
-      <Route path="/wasabi_reviews/userinfo" element={<UserInfo />} />
-      <Route path="/wasabi_reviews/choose" element={<Choose />} />
-      <Route path="/wasabi_reviews/food" element={<Food />} />
-      <Route path="/wasabi_reviews/staff" element={<Staff />} />
-      <Route path="/wasabi_reviews/other" element={<Other />} />
-      <Route path="/wasabi_reviews/thanks" element={<Thanks />} />
+    <Route path="" element={<Layout />}>
+      <Route path="" element={<Home />} />
+      <Route path="/userinfo" element={<UserInfo />} />
+      <Route path="/choose" element={<Choose />} />
+      <Route path="/food" element={<Food />} />
+      <Route path="/staff" element={<Staff />} />
+      <Route path="/other" element={<Other />} />
+      <Route path="/thanks" element={<Thanks />} />
     </Route>
   </Routes>
 );
