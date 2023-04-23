@@ -9,7 +9,7 @@ const Thanks = () => (
       Мы ценим ваше мнение и обязательно рассмотрим ваш отзыв. Благодарим за то, что поделились с
       нами своим опытом.
     </p>
-    <LinkButton to="/wasabi_reviews/choose">Оставить еще один отзыв</LinkButton>
+    <LinkButton to="/choose">Оставить еще один отзыв</LinkButton>
   </div>
 );
 
