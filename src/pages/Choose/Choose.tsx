@@ -14,7 +14,7 @@ const Choose = () => {
     <div className={styles.wrapper}>
       <h4 className={styles.page_text}>Выберите категорию:</h4>
       <div className={styles.main}>
-        <Link to="/wasabi_reviews/food" className={styles.card_container}>
+        <Link to="/food" className={styles.card_container}>
           <Card
             onClick={() => {
               saveCategory('Еда');
@@ -26,7 +26,7 @@ const Choose = () => {
           </Card>
         </Link>
 
-        <Link to="/wasabi_reviews/staff" className={styles.card_container}>
+        <Link to="/staff" className={styles.card_container}>
           <Card
             onClick={() => {
               saveCategory('Персонал');
@@ -38,7 +38,7 @@ const Choose = () => {
           </Card>
         </Link>
 
-        <Link to="/wasabi_reviews/other" className={styles.card_container}>
+        <Link to="/other" className={styles.card_container}>
           <Card
             onClick={() => {
               saveCategory('Другое');
@@ -51,7 +51,7 @@ const Choose = () => {
         </Link>
         <Button
           onClick={() => {
-            navigate('/wasabi_reviews/userinfo');
+            navigate('/userinfo');
           }}
         >
           Назад

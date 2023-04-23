@@ -30,7 +30,7 @@ const Other = () => {
   };
 
   const sendMessage = () => {
-    navigate('/wasabi_reviews/thanks');
+    navigate('/thanks');
     sendReview();
     setReview('');
   };
@@ -51,7 +51,7 @@ const Other = () => {
       <div className={styles.buttons}>
         <Button
           onClick={() => {
-            navigate('/wasabi_reviews/choose');
+            navigate('/choose');
           }}
         >
           Назад
