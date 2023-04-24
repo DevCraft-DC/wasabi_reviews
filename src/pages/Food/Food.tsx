@@ -41,7 +41,7 @@ const Food = () => {
           navigate('/choose');
         }}
       >
-        <img loading="lazy" className={styles.arrow_icon} src={arrow} alt="back arrow" />
+        <img className={styles.arrow_icon} src={arrow} alt="back arrow" />
       </button>
       <h4 className={styles.page_text}>Выберите блюдо, которое хотите оценить:</h4>
 
@@ -57,7 +57,7 @@ const Food = () => {
               key={food.title}
               className={styles.dish_card}
             >
-              <img src={food.image} alt={food.title} />
+              <img loading="lazy" src={food.image} alt={food.title} />
               <div className={styles.data}>
                 <h3>{food.title}</h3>
               </div>
