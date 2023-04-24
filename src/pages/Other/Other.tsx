@@ -37,9 +37,10 @@ const Other = () => {
 
   return (
     <>
+      <h4 className={styles.page_text}>Ваши жалобы и предложения:</h4>
       <textarea
         className={styles.textarea}
-        placeholder="Ваш отзыв..."
+        placeholder="Введите текст..."
         name="review"
         value={review}
         cols={2}

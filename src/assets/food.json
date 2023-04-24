@@ -84,7 +84,7 @@
     "image": "/food-imgs/steyk-minyon.png"
   },
   {
-    "title": "Стейк «Томогавк»",
+    "title": "Стейк «Томагавк»",
     "image": "/food-imgs/steyk-tomogavk.png"
   },
   {
@@ -148,7 +148,7 @@
     "image": "/food-imgs/salat-pp-ot-shefa.png"
   },
   {
-    "title": "Суп «Турецкий»",
+    "title": "Салат «Турецкий»",
     "image": "/food-imgs/salat-tureckiy.png"
   },
   {
@@ -174,5 +174,21 @@
   {
     "title": "Салат «Васаби»",
     "image": "/food-imgs/salat-vasabi.png"
+  },
+  {
+    "title": "Праздничный манди с перепелами",
+    "image": "/food-imgs/prazdnichniy_mandi_s_perepalami.jpg"
+  },
+  {
+    "title": "Кавказское ассорти",
+    "image": "food-imgs/kavkazskoe_assorty.jpg"
+  },
+  {
+    "title": "Ассорти из шашлыков",
+    "image": "food-imgs/kavkazskoe_assorty.jpg"
+  },
+  {
+    "title": "Детский набор Бенто",
+    "image": "/food-imgs/detsky_nabor_bento.jpg"
   }
 ]
