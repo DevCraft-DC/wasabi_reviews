@@ -41,7 +41,7 @@ const Food = () => {
           navigate('/choose');
         }}
       >
-        <img className={styles.arrow_icon} src={arrow} alt="back arrow" />
+        <img loading="lazy" className={styles.arrow_icon} src={arrow} alt="back arrow" />
       </button>
       <h4 className={styles.page_text}>Выберите блюдо, которое хотите оценить:</h4>
 

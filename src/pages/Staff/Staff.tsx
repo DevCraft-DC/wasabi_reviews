@@ -47,7 +47,7 @@ const Staff = () => {
             key={member.id}
             className={styles.staff_card}
           >
-            <img src={member.image} alt={member.name} />
+            <img loading="lazy" src={member.image} alt={member.name} />
             <div className={styles.data}>
               <p>{member.position}</p>
               <h3>{member.name}</h3>
