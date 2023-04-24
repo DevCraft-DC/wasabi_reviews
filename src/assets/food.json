@@ -1,194 +1,242 @@
 [
   {
     "title": "Лапша удон с куриным филе",
-    "image": "/food-imgs/lapsha-udon-s-kurinnym-file.png"
+    "image": "/food-imgs/lapsha-udon-s-kurinnym-file.png",
+    "category": 2
   },
   {
     "title": "Паста с курицей и грибами",
-    "image": "/food-imgs/pasta-s-kirucey-i-gribami.png"
+    "image": "/food-imgs/pasta-s-kirucey-i-gribami.png",
+    "category": 2
   },
   {
     "title": "Паста с лососем и креветками",
-    "image": "/food-imgs/pasta-s-lososem-i-krevetkami.png"
+    "image": "/food-imgs/pasta-s-lososem-i-krevetkami.png",
+    "category": 3
   },
   {
     "title": "Плов манди с перепелками",
-    "image": "/food-imgs/plov-mandi-s-perepelkami.png"
+    "image": "/food-imgs/plov-mandi-s-perepelkami.png",
+    "category": 3
   },
   {
     "title": "Хачапури с сыром и яйцом",
-    "image": "/food-imgs/hachapuri-s-sirom-i-yaycom.png"
+    "image": "/food-imgs/hachapuri-s-sirom-i-yaycom.png",
+    "category": 4
   },
   {
     "title": "Пицца став со шпинатом и брокколи",
-    "image": "/food-imgs/picca-s-brokkali.png"
+    "image": "/food-imgs/picca-s-brokkali.png",
+    "category": 4
   },
   {
     "title": "Пицца став с курицей и брокколи",
-    "image": "/food-imgs/picca-s-brokkali.png"
+    "image": "/food-imgs/picca-s-brokkali.png",
+    "category": 4
   },
   {
     "title": "Креветки дубай",
-    "image": "/food-imgs/krivetki-dubay.png"
+    "image": "/food-imgs/krivetki-dubay.png",
+    "category": 2
   },
   {
     "title": "Креветки от шефа на гриле",
-    "image": "/food-imgs/krivetki-ot-shefa-na-grile.png"
+    "image": "/food-imgs/krivetki-ot-shefa-na-grile.png",
+    "category": 2
   },
   {
     "title": "Стейк из лосося в соусе терияки",
-    "image": "/food-imgs/steyk-iz-lososya-v-souse-teriyaki.png"
+    "image": "/food-imgs/steyk-iz-lososya-v-souse-teriyaki.png",
+    "category": 4
   },
   {
     "title": "Лосось по-норвежски",
-    "image": "/food-imgs/losos-po-norvejski.png"
+    "image": "/food-imgs/losos-po-norvejski.png",
+    "category": 1
   },
   {
     "title": "Стейк из лосося в сливочно-икорном соусе",
-    "image": "/food-imgs/steyk-iz-lososya-v-slivochno-ikirnom-souse.png"
+    "image": "/food-imgs/steyk-iz-lososya-v-slivochno-ikirnom-souse.png",
+    "category": 4
   },
   {
     "title": "Дорадо по-домашнему",
-    "image": "/food-imgs/dorado-po-domashnemu.png"
+    "image": "/food-imgs/dorado-po-domashnemu.png",
+    "category": 2
   },
   {
     "title": "Салат «Авокадо»",
-    "image": "/food-imgs/salat-avakado.png"
+    "image": "/food-imgs/salat-avakado.png",
+    "category": 2
   },
   {
     "title": "Салат «Фунчоза»",
-    "image": "/food-imgs/salat-funchoza.png"
+    "image": "/food-imgs/salat-funchoza.png",
+    "category": 3
   },
   {
     "title": "Салат «Цезарь» с креветками/с курицей",
-    "image": "/food-imgs/salat-cezar-s-krevetkami-kuricey.png"
+    "image": "/food-imgs/salat-cezar-s-krevetkami-kuricey.png",
+    "category": 3
   },
   {
     "title": "Баранья рулька в таджине",
-    "image": "/food-imgs/baranya-rulka-v-tadjine.png"
+    "image": "/food-imgs/baranya-rulka-v-tadjine.png",
+    "category": 1
   },
   {
     "title": "Креветки в панировке",
-    "image": "/food-imgs/krivetki-v-panirovke.png"
+    "image": "/food-imgs/krivetki-v-panirovke.png",
+    "category": 1
   },
   {
     "title": "Спринг роллы",
-    "image": "/food-imgs/spring-rolli.png"
+    "image": "/food-imgs/spring-rolli.png",
+    "category": 1
   },
   {
     "title": "Каре ягнёнка",
-    "image": "/food-imgs/kare-yagnenka.png"
+    "image": "/food-imgs/kare-yagnenka.png",
+    "category": 1
   },
   {
     "title": "Стейк «Миньон»",
-    "image": "/food-imgs/steyk-minyon.png"
+    "image": "/food-imgs/steyk-minyon.png",
+    "category": 1
   },
   {
     "title": "Стейк «Томагавк»",
-    "image": "/food-imgs/steyk-tomogavk.png"
+    "image": "/food-imgs/steyk-tomogavk.png",
+    "category": 1
   },
   {
     "title": "Стейк «Мраморный рибай»",
-    "image": "/food-imgs/steyk-mramorniy-ribay.png"
+    "image": "/food-imgs/steyk-mramorniy-ribay.png",
+    "category": 1
   },
   {
     "title": "Рис острый по-корейски",
-    "image": "/food-imgs/ris-ostriy-po-koreyski.png"
+    "image": "/food-imgs/ris-ostriy-po-koreyski.png",
+    "category": 4
   },
   {
     "title": "Жаркое из говядины",
-    "image": "/food-imgs/jarkoe-iz-govyadiny.png"
+    "image": "/food-imgs/jarkoe-iz-govyadiny.png",
+    "category": 4
   },
   {
     "title": "Бефстроганов по-швейцарски",
-    "image": "/food-imgs/befstroganov-po-shveycarsky.png"
+    "image": "/food-imgs/befstroganov-po-shveycarsky.png",
+    "category": 4
   },
   {
     "title": "Медальоны",
-    "image": "/food-imgs/medalyony.png"
+    "image": "/food-imgs/medalyony.png",
+    "category": 4
   },
   {
     "title": "Куриная грудка с овощами в медовом соусе",
-    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-v-medovom-souse.png"
+    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-v-medovom-souse.png",
+    "category": 4
   },
   {
     "title": "Куриная грудка с овощами на гриле",
-    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-na-grile.png"
+    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-na-grile.png",
+    "category": 4
   },
   {
     "title": "Паста равиоли с курицей",
-    "image": "/food-imgs/pasta-ravioli-s-kuricey.png"
+    "image": "/food-imgs/pasta-ravioli-s-kuricey.png",
+    "category": 4
   },
   {
     "title": "Спагетти с брокколи и шпинатом в сливочном соусе",
-    "image": "/food-imgs/spagetti-s-brokkoli-i-shpinatom-v-slivochnom-souse.png"
+    "image": "/food-imgs/spagetti-s-brokkoli-i-shpinatom-v-slivochnom-souse.png",
+    "category": 4
   },
   {
     "title": "Паста фетучини с морепродуктами в сливочном соусе",
-    "image": "/food-imgs/pasta-fetuchini-s-moreproductami-v-slivochnom-souse.png"
+    "image": "/food-imgs/pasta-fetuchini-s-moreproductami-v-slivochnom-souse.png",
+    "category": 4
   },
   {
     "title": "Суп куриный с домашней лапшой",
-    "image": "/food-imgs/sup-kuriniy-s-domashney-lapshoy.png"
+    "image": "/food-imgs/sup-kuriniy-s-domashney-lapshoy.png",
+    "category": 4
   },
   {
     "title": "Суп «Кук си»",
-    "image": "/food-imgs/sup-kuk-si.png"
+    "image": "/food-imgs/sup-kuk-si.png",
+    "category": 4
   },
   {
     "title": "Рамен куриный/говяжий",
-    "image": "/food-imgs/ramen-kurinniy-govyajiy.png"
+    "image": "/food-imgs/ramen-kurinniy-govyajiy.png",
+    "category": 4
   },
   {
     "title": "Том-ям с морепродуктами/с курицей",
-    "image": "/food-imgs/tom-yam-s-moreporudctami-s-kuricey.png"
+    "image": "/food-imgs/tom-yam-s-moreporudctami-s-kuricey.png",
+    "category": 4
   },
   {
     "title": "Салат пп от шефа",
-    "image": "/food-imgs/salat-pp-ot-shefa.png"
+    "image": "/food-imgs/salat-pp-ot-shefa.png",
+    "category": 4
   },
   {
     "title": "Салат «Турецкий»",
-    "image": "/food-imgs/salat-tureckiy.png"
+    "image": "/food-imgs/salat-tureckiy.png",
+    "category": 4
   },
   {
     "title": "Суши La-тауэр",
-    "image": "/food-imgs/sushi-la-tower.png"
+    "image": "/food-imgs/sushi-la-tower.png",
+    "category": 1
   },
   {
     "title": "Курзе",
-    "image": "/food-imgs/kurze.png"
+    "image": "/food-imgs/kurze.png",
+    "category": 4
   },
   {
     "title": "Цыпленок по-голландски",
-    "image": "/food-imgs/ciplenok-po-gollandsky.png"
+    "image": "/food-imgs/ciplenok-po-gollandsky.png",
+    "category": 4
   },
   {
     "title": "Салат «Идеальный зелёный»",
-    "image": "/food-imgs/salat-idealniy-zeleniy.png"
+    "image": "/food-imgs/salat-idealniy-zeleniy.png",
+    "category": 4
   },
   {
     "title": "Салат с хрустящими баклажанами",
-    "image": "/food-imgs/salat-s-hrustyashimi-baklajanami.png"
+    "image": "/food-imgs/salat-s-hrustyashimi-baklajanami.png",
+    "category": 4
   },
   {
     "title": "Салат «Васаби»",
-    "image": "/food-imgs/salat-vasabi.png"
+    "image": "/food-imgs/salat-vasabi.png",
+    "category": 4
   },
   {
     "title": "Праздничный манди с перепелами",
-    "image": "/food-imgs/prazdnichniy_mandi_s_perepalami.jpg"
+    "image": "/food-imgs/prazdnichniy_mandi_s_perepalami.jpg",
+    "category": 4
   },
   {
     "title": "Кавказское ассорти",
-    "image": "food-imgs/kavkazskoe_assorty.jpg"
+    "image": "food-imgs/kavkazskoe_assorty.jpg",
+    "category": 4
   },
   {
     "title": "Ассорти из шашлыков",
-    "image": "food-imgs/kavkazskoe_assorty.jpg"
+    "image": "food-imgs/kavkazskoe_assorty.jpg",
+    "category": 4
   },
   {
     "title": "Детский набор Бенто",
-    "image": "/food-imgs/detsky_nabor_bento.jpg"
+    "image": "/food-imgs/detsky_nabor_bento.jpg",
+    "category": 4
   }
 ]

@@ -9,12 +9,21 @@ import arrow from '../../assets/arrow-short.svg';
 import { SearchInput } from '@/components/SearchInput/SearchInput';
 import { ReviewModal } from '@/components/ReviewModal/ReviewModal';
 import { Card } from '@/components/Card/Card';
+import { Picker } from '@/components/Picker/Picker';
+import { Tag } from '@/components/Picker/Tag';
+
+const categories = ['Все', 'Суши и Роллы', 'Мангал', 'Нац. кухня', 'Остальное'];
 
 const Food = () => {
   const [searchText, setSearchText] = useState('');
   const [modal, setModal] = useState(false);
   const [title, setTitle] = useState('');
+  const [category, setCategory] = useState(0);
   const navigate = useNavigate();
+
+  const changeCategory = (index: number) => {
+    setCategory(index);
+  };
 
   const showModal = (foodTitle: string) => {
     setModal(true);
@@ -22,9 +31,14 @@ const Food = () => {
     localStorage.setItem('target', foodTitle);
   };
 
-  const filteredFood = food.filter((dish) =>
-    dish.title.toUpperCase().includes(searchText.toUpperCase())
-  );
+  const filteredFood = food.filter((dish) => {
+    if (category !== 0) {
+      return (
+        dish.title.toUpperCase().includes(searchText.toUpperCase()) && dish.category === category
+      );
+    }
+    return dish.title.toUpperCase().includes(searchText.toUpperCase());
+  });
 
   return (
     <div className={styles.page_container}>
@@ -46,6 +60,21 @@ const Food = () => {
       <h4 className={styles.page_text}>Выберите блюдо, которое хотите оценить:</h4>
 
       <SearchInput searchText={searchText} setSearchText={setSearchText} />
+
+      <Picker>
+        {categories.map((cat, index) => (
+          <Tag
+            key={cat}
+            index={index}
+            value={category}
+            changeCategory={() => {
+              changeCategory(index);
+            }}
+          >
+            {cat}
+          </Tag>
+        ))}
+      </Picker>
 
       {filteredFood.length > 0 ? (
         <div className={styles.cards_container}>
