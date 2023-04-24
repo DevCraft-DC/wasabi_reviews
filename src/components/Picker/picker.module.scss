@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.main {
+  overflow: hidden;
+  overflow-x: scroll;
+
+  scrollbar-color: grey rgba(0, 0, 0, 0);
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 100vw;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(82, 82, 82, 0.515);
+    border-radius: 100vw;
+  }
+}
+
+.container {
+  user-select: none;
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
