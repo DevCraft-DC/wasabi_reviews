@@ -12,7 +12,15 @@ import { Card } from '@/components/Card/Card';
 import { Picker } from '@/components/Picker/Picker';
 import { Tag } from '@/components/Picker/Tag';
 
-const categories = ['Все', 'Суши и Роллы', 'Мангал', 'Нац. кухня', 'Остальное'];
+const categories = [
+  'Все',
+  'Суши и Роллы',
+  'Мангал',
+  'Нац. кухня',
+  'Евро кухня',
+  'Салаты',
+  'Другое'
+];
 
 const Food = () => {
   const [searchText, setSearchText] = useState('');
