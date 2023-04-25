@@ -2,17 +2,17 @@
   {
     "title": "Лапша удон с куриным филе",
     "image": "/food-imgs/lapsha-udon-s-kurinnym-file.png",
-    "category": 2
+    "category": 4
   },
   {
     "title": "Паста с курицей и грибами",
     "image": "/food-imgs/pasta-s-kirucey-i-gribami.png",
-    "category": 2
+    "category": 4
   },
   {
     "title": "Паста с лососем и креветками",
     "image": "/food-imgs/pasta-s-lososem-i-krevetkami.png",
-    "category": 3
+    "category": 4
   },
   {
     "title": "Плов манди с перепелками",
@@ -22,42 +22,42 @@
   {
     "title": "Хачапури с сыром и яйцом",
     "image": "/food-imgs/hachapuri-s-sirom-i-yaycom.png",
-    "category": 4
+    "category": 3
   },
   {
     "title": "Пицца став со шпинатом и брокколи",
     "image": "/food-imgs/picca-s-brokkali.png",
-    "category": 4
+    "category": 6
   },
   {
     "title": "Пицца став с курицей и брокколи",
     "image": "/food-imgs/picca-s-brokkali.png",
-    "category": 4
+    "category": 6
   },
   {
     "title": "Креветки дубай",
     "image": "/food-imgs/krivetki-dubay.png",
-    "category": 2
+    "category": 1
   },
   {
     "title": "Креветки от шефа на гриле",
     "image": "/food-imgs/krivetki-ot-shefa-na-grile.png",
-    "category": 2
+    "category": 1
   },
   {
     "title": "Стейк из лосося в соусе терияки",
     "image": "/food-imgs/steyk-iz-lososya-v-souse-teriyaki.png",
-    "category": 4
+    "category": 2
   },
   {
     "title": "Лосось по-норвежски",
     "image": "/food-imgs/losos-po-norvejski.png",
-    "category": 1
+    "category": 2
   },
   {
     "title": "Стейк из лосося в сливочно-икорном соусе",
     "image": "/food-imgs/steyk-iz-lososya-v-slivochno-ikirnom-souse.png",
-    "category": 4
+    "category": 2
   },
   {
     "title": "Дорадо по-домашнему",
@@ -67,22 +67,22 @@
   {
     "title": "Салат «Авокадо»",
     "image": "/food-imgs/salat-avakado.png",
-    "category": 2
+    "category": 5
   },
   {
     "title": "Салат «Фунчоза»",
     "image": "/food-imgs/salat-funchoza.png",
-    "category": 3
+    "category": 5
   },
   {
     "title": "Салат «Цезарь» с креветками/с курицей",
     "image": "/food-imgs/salat-cezar-s-krevetkami-kuricey.png",
-    "category": 3
+    "category": 5
   },
   {
     "title": "Баранья рулька в таджине",
     "image": "/food-imgs/baranya-rulka-v-tadjine.png",
-    "category": 1
+    "category": 6
   },
   {
     "title": "Креветки в панировке",
@@ -97,27 +97,27 @@
   {
     "title": "Каре ягнёнка",
     "image": "/food-imgs/kare-yagnenka.png",
-    "category": 1
+    "category": 4
   },
   {
     "title": "Стейк «Миньон»",
     "image": "/food-imgs/steyk-minyon.png",
-    "category": 1
+    "category": 2
   },
   {
     "title": "Стейк «Томагавк»",
     "image": "/food-imgs/steyk-tomogavk.png",
-    "category": 1
+    "category": 2
   },
   {
     "title": "Стейк «Мраморный рибай»",
     "image": "/food-imgs/steyk-mramorniy-ribay.png",
-    "category": 1
+    "category": 2
   },
   {
     "title": "Рис острый по-корейски",
     "image": "/food-imgs/ris-ostriy-po-koreyski.png",
-    "category": 4
+    "category": 1
   },
   {
     "title": "Жаркое из говядины",
@@ -167,27 +167,27 @@
   {
     "title": "Суп «Кук си»",
     "image": "/food-imgs/sup-kuk-si.png",
-    "category": 4
+    "category": 1
   },
   {
     "title": "Рамен куриный/говяжий",
     "image": "/food-imgs/ramen-kurinniy-govyajiy.png",
-    "category": 4
+    "category": 1
   },
   {
     "title": "Том-ям с морепродуктами/с курицей",
     "image": "/food-imgs/tom-yam-s-moreporudctami-s-kuricey.png",
-    "category": 4
+    "category": 1
   },
   {
     "title": "Салат пп от шефа",
     "image": "/food-imgs/salat-pp-ot-shefa.png",
-    "category": 4
+    "category": 5
   },
   {
     "title": "Салат «Турецкий»",
     "image": "/food-imgs/salat-tureckiy.png",
-    "category": 4
+    "category": 5
   },
   {
     "title": "Суши La-тауэр",
@@ -197,7 +197,7 @@
   {
     "title": "Курзе",
     "image": "/food-imgs/kurze.png",
-    "category": 4
+    "category": 3
   },
   {
     "title": "Цыпленок по-голландски",
@@ -207,17 +207,17 @@
   {
     "title": "Салат «Идеальный зелёный»",
     "image": "/food-imgs/salat-idealniy-zeleniy.png",
-    "category": 4
+    "category": 5
   },
   {
     "title": "Салат с хрустящими баклажанами",
     "image": "/food-imgs/salat-s-hrustyashimi-baklajanami.png",
-    "category": 4
+    "category": 5
   },
   {
     "title": "Салат «Васаби»",
     "image": "/food-imgs/salat-vasabi.png",
-    "category": 4
+    "category": 5
   },
   {
     "title": "Праздничный манди с перепелами",
@@ -227,12 +227,12 @@
   {
     "title": "Кавказское ассорти",
     "image": "food-imgs/kavkazskoe_assorty.jpg",
-    "category": 4
+    "category": 3
   },
   {
     "title": "Ассорти из шашлыков",
-    "image": "food-imgs/kavkazskoe_assorty.jpg",
-    "category": 4
+    "image": "food-imgs/assorty_iz_shashlikov.jpg",
+    "category": 2
   },
   {
     "title": "Детский набор Бенто",
