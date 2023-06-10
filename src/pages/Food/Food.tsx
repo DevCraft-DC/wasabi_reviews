@@ -93,8 +93,8 @@ const Food = () => {
               }}
               key={food.title}
               className={styles.dish_card}
+              img={food.image}
             >
-              <img loading="lazy" src={food.image} alt={food.title} />
               <div className={styles.data}>
                 <h3>{food.title}</h3>
               </div>

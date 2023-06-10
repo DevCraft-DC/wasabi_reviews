@@ -1,7 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './choose.module.scss';
-import { Card } from '../../components/Card/Card';
 import { Button } from '../../components/Button/Button';
 
 const Choose = () => {
@@ -15,39 +14,39 @@ const Choose = () => {
       <h4 className={styles.page_text}>Выберите категорию:</h4>
       <div className={styles.main}>
         <Link to="/food" className={styles.card_container}>
-          <Card
+          <div
             onClick={() => {
-              saveCategory('Еда');
+              saveCategory('food');
             }}
             className={styles.choose_card}
           >
             <span>Еда</span>
             <Button>Выбрать</Button>
-          </Card>
+          </div>
         </Link>
 
         <Link to="/staff" className={styles.card_container}>
-          <Card
+          <div
             onClick={() => {
-              saveCategory('Персонал');
+              saveCategory('staff');
             }}
             className={styles.choose_card}
           >
             <span>Персонал</span>
             <Button>Выбрать</Button>
-          </Card>
+          </div>
         </Link>
 
         <Link to="/other" className={styles.card_container}>
-          <Card
+          <div
             onClick={() => {
-              saveCategory('Другое');
+              saveCategory('other');
             }}
             className={styles.choose_card}
           >
             <span>Другое</span>
             <Button>Выбрать</Button>
-          </Card>
+          </div>
         </Link>
         <Button
           onClick={() => {

@@ -22,9 +22,9 @@ const UserInfo = () => {
       localStorage.removeItem('name');
     }
     if (phoneNumber !== '') {
-      localStorage.setItem('phone number', phoneNumber);
+      localStorage.setItem('phone', phoneNumber);
     } else {
-      localStorage.removeItem('phone number');
+      localStorage.removeItem('phone');
     }
     if (email !== '') {
       localStorage.setItem('email', email);
