@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import styles from './other.module.scss';
 import { Button } from '../../components/Button/Button';
 import { getValueFromLS } from '../../utils/getValueFromLS';
-import { createTemplate } from '../../utils/createTemplate';
 
 const Other = () => {
   const [review, setReview] = useState('');
@@ -16,16 +15,13 @@ const Other = () => {
   const target = getValueFromLS('target');
   const email = getValueFromLS('email');
 
-  const template = createTemplate({ username, phone, email, review, category, target });
-  const encoded = encodeURIComponent(template);
-
   const sendReview = () => {
-    void fetch('https://wasabi-backend.onrender.com', {
+    void fetch('https://reviews-tg-proxy.onrender.com/wasabi', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ review: encoded })
+      body: JSON.stringify({ username, phone, email, review, category, target })
     });
   };
 

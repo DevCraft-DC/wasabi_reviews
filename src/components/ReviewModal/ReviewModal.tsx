@@ -6,7 +6,6 @@ import { Button } from '../Button/Button';
 import styles from './reviewmodal.module.scss';
 
 import { getValueFromLS } from '@/utils/getValueFromLS';
-import { createTemplate } from '@/utils/createTemplate';
 
 interface ReviewModalProps {
   reviewTarget: string;
@@ -23,16 +22,13 @@ export const ReviewModal = ({ reviewTarget, show, removeModal }: ReviewModalProp
   const target = getValueFromLS('target');
   const email = getValueFromLS('email');
 
-  const template = createTemplate({ username, phone, email, review, category, target });
-  const encoded = encodeURIComponent(template);
-
   const sendReview = () => {
-    void fetch('https://wasabi-backend.onrender.com', {
+    void fetch('https://reviews-tg-proxy.onrender.com/wasabi', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ review: encoded })
+      body: JSON.stringify({ username, phone, email, review, category, target })
     });
   };
 
