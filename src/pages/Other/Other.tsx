@@ -4,31 +4,17 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './other.module.scss';
 import { Button } from '../../components/Button/Button';
-import { getValueFromLS } from '../../utils/getValueFromLS';
+
+import { sendReview } from '@/utils/sendReview';
 
 const Other = () => {
   const [review, setReview] = useState('');
   const navigate = useNavigate();
-  const username = getValueFromLS('name');
-  const phone = getValueFromLS('phone number');
-  const category = getValueFromLS('category');
-  const target = getValueFromLS('target');
-  const email = getValueFromLS('email');
-
-  const sendReview = () => {
-    void fetch('https://reviews-tg-proxy.onrender.com/wasabi', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ username, phone, email, review, category, target })
-    });
-  };
 
   const sendMessage = () => {
-    navigate('/thanks');
-    sendReview();
+    sendReview(review);
     setReview('');
+    navigate('/thanks');
   };
 
   return (
