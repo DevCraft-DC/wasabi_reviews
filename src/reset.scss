@@ -23,7 +23,6 @@ body {
   background-color: $main-color;
   color: $white-text;
   letter-spacing: 0.1rem;
-  font-family: 'Philosopher Regular', cursive;
   font-size: 20px;
 
   @media (max-width: 400px) {
@@ -88,8 +87,3 @@ h6 {
 /*
   10. Define fonts
 */
-
-@font-face {
-  font-family: 'Philosopher Regular';
-  src: url('../fonts/Philosopher_Regular.ttf');
-}

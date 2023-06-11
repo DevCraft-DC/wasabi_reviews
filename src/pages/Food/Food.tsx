@@ -26,11 +26,11 @@ const Food = () => {
   const [searchText, setSearchText] = useState('');
   const [modal, setModal] = useState(false);
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState('Все');
   const navigate = useNavigate();
 
-  const changeCategory = (index: number) => {
-    setCategory(index);
+  const changeCategory = (catName: string) => {
+    setCategory(catName);
   };
 
   const showModal = (foodTitle: string) => {
@@ -40,7 +40,7 @@ const Food = () => {
   };
 
   const filteredFood = food.filter((dish) => {
-    if (category !== 0) {
+    if (category !== 'Все') {
       return (
         dish.title.toUpperCase().includes(searchText.toUpperCase()) && dish.category === category
       );
@@ -70,13 +70,13 @@ const Food = () => {
       <SearchInput searchText={searchText} setSearchText={setSearchText} />
 
       <Picker>
-        {categories.map((cat, index) => (
+        {categories.map((cat) => (
           <Tag
             key={cat}
-            index={index}
+            cat={cat}
             value={category}
             changeCategory={() => {
-              changeCategory(index);
+              changeCategory(cat);
             }}
           >
             {cat}
