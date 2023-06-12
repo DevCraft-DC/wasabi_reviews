@@ -1,5 +1,7 @@
 import { getValueFromLS } from './getValueFromLS';
 
+const BASE_URL = 'https://api.the-loft-reviews.ru/wasabi';
+
 interface ReviewType {
   name: string;
   phone: string;
@@ -25,7 +27,7 @@ export const sendReview = (text: string) => {
     reviewText: text
   };
 
-  void fetch('https://reviews-tg-proxy.onrender.com/wasabi', {
+  void fetch(BASE_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
