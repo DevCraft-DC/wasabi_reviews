@@ -19,4 +19,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -p 22 -i ~/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
+      - run: cd dist && rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
