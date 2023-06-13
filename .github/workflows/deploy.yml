@@ -13,10 +13,10 @@ jobs:
       # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
-      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/authorized_keys"
-      - run: chmod 600 "$HOME/.ssh/authorized_keys"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
       # Build
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -p 20022 -i $HOME/.ssh/authorized_keys -o StrictHostKeyChecking=no" --archive --compress --delete . devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
+      - run: cd dist && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
