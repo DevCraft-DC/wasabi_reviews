@@ -1,0 +1,36 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React application
+      run: npm run build
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_KEY }}
+
+    - name: Deploy to Shared Hosting
+      run: |
+        # Replace the SSH connection details and deployment commands with your specific ones
+        ssh devcrato@devcrato.beget.tech 'cd /home/d/devcrato/wasabi-reviews.ru/public_html && rm -rf *'
+        scp -r dist/* devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
+
+        echo "Deployment completed successfully!"
