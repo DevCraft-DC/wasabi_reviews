@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # Setup key
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.SSH_KEY }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
+      # Save key to a file
+      - name: Save SSH key
+        run: echo "${{ secrets.SSH_KEY }}" > ssh_key.pem
+        shell: bash
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          mv ssh_key.pem ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa devcrato.beget.com >> ~/.ssh/known_hosts
+      # Build
+      - run: npm ci
+      - run: npm run build
+      # Deploy
+      - run: cd dist && rsync -e "ssh -p 22 -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --archive --compress --delete . devcrato@devcrato.beget.tech:/home/d/devcrato/wasabi-reviews.ru/public_html
