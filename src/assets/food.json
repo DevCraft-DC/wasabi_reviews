@@ -1,68 +1,501 @@
 [
   {
-    "title": "Лапша удон с куриным филе",
-    "image": "/food-imgs/lapsha-udon-s-kurinnym-file.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Паста с курицей и грибами",
-    "image": "/food-imgs/pasta-s-kirucey-i-gribami.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Паста с лососем и креветками",
-    "image": "/food-imgs/pasta-s-lososem-i-krevetkami.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Плов манди с перепелками",
-    "image": "/food-imgs/plov-mandi-s-perepelkami.webp",
-    "category": "Нац. кухня"
-  },
-  {
-    "title": "Хачапури с сыром и яйцом",
-    "image": "/food-imgs/hachapuri-s-sirom-i-yaycom.webp",
-    "category": "Нац. кухня"
-  },
-  {
-    "title": "Пицца став со шпинатом и брокколи",
-    "image": "/food-imgs/picca-s-brokkali.webp",
-    "category": "Другое"
-  },
-  {
-    "title": "Пицца став с курицей и брокколи",
-    "image": "/food-imgs/picca-s-brokkali.webp",
-    "category": "Другое"
-  },
-  {
-    "title": "Креветки дубай",
-    "image": "/food-imgs/krivetki-dubay.webp",
+    "title": "Суши La-тауэр",
+    "image": "/food-imgs/sushi-la-tower.webp",
     "category": "Суши и Роллы"
   },
   {
-    "title": "Креветки от шефа на гриле",
-    "image": "/food-imgs/krivetki-ot-shefa-na-grile.webp",
+    "title": "Сет биг васаби",
+    "image": "/food-imgs/sushi/sushi 1.jpg",
     "category": "Суши и Роллы"
   },
   {
-    "title": "Стейк из лосося в соусе терияки",
-    "image": "/food-imgs/steyk-iz-lososya-v-souse-teriyaki.webp",
+    "title": "Ролл Сяки Маки",
+    "image": "/food-imgs/sushi/sushi 2.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Капа Маки",
+    "image": "/food-imgs/sushi/sushi 3.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Магура ролл",
+    "image": "/food-imgs/sushi/sushi 4.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Авокадо ролл",
+    "image": "/food-imgs/sushi/sushi 5.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Суши Мариавасэ",
+    "image": "/food-imgs/sushi/sushi 6.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Калифорния с креветкой",
+    "image": "/food-imgs/sushi/sushi 7.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Калифорния с лососем",
+    "image": "/food-imgs/sushi/sushi 8.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Мега микс",
+    "image": "/food-imgs/sushi/sushi 9.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Ниндзя",
+    "image": "/food-imgs/sushi/sushi 10.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Токио",
+    "image": "/food-imgs/sushi/sushi 11.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Мадара ролл",
+    "image": "/food-imgs/sushi/sushi 12.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Европейский",
+    "image": "/food-imgs/sushi/sushi 13.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Бешеный лосось",
+    "image": "/food-imgs/sushi/sushi 14.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Калифорния с крабом",
+    "image": "/food-imgs/sushi/sushi 15.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Филадельфия с угрем",
+    "image": "/food-imgs/sushi/sushi 16.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Сливочный лосось",
+    "image": "/food-imgs/sushi/sushi 17.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Канадский ролл",
+    "image": "/food-imgs/sushi/sushi 19.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Яки унаги",
+    "image": "/food-imgs/sushi/sushi 20.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Весна",
+    "image": "/food-imgs/sushi/sushi 21.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Темпура фурай",
+    "image": "/food-imgs/sushi/sushi 22.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Персона грата",
+    "image": "/food-imgs/sushi/sushi 23.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Горячий шик",
+    "image": "/food-imgs/sushi/sushi 24.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Запеченный гун Кан сет",
+    "image": "/food-imgs/sushi/sushi 25.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Теплый сет",
+    "image": "/food-imgs/sushi/sushi 26.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Сет классический",
+    "image": "/food-imgs/sushi/sushi 27.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл сузако",
+    "image": "/food-imgs/sushi/sushi 28.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Сэйкацу",
+    "image": "/food-imgs/sushi/sushi 29.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл сангацу",
+    "image": "/food-imgs/sushi/sushi 30.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Сет художника",
+    "image": "/food-imgs/sushi/sushi 31.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Салат ролл с лососем",
+    "image": "/food-imgs/sushi/sushi 32.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Салат ролл с окунем",
+    "image": "/food-imgs/sushi/sushi 33.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Бали",
+    "image": "/food-imgs/sushi/sushi 34.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл Васаби",
+    "image": "/food-imgs/sushi/sushi 35.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Легенда",
+    "image": "/food-imgs/sushi/sushi 36.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Бешеная персона",
+    "image": "/food-imgs/sushi/sushi 37.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Ролл мацарелла",
+    "image": "/food-imgs/sushi/sushi 38.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Грибной ролл с тыквой",
+    "image": "/food-imgs/sushi/sushi 39.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Шеф рол",
+    "image": "/food-imgs/sushi/sushi 40.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Фудзи",
+    "image": "/food-imgs/sushi/sushi 41.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Самурай",
+    "image": "/food-imgs/sushi/sushi 42.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Сакура",
+    "image": "/food-imgs/sushi/sushi 43.jpg",
+    "category": "Суши и Роллы"
+  },
+  {
+    "title": "Стейк миньон",
+    "image": "/food-imgs/myasnye/myasnoe 2.png",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Медальоны",
+    "image": "/food-imgs/myasnye/myasnoe 5.png",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Ассорти из шашлыков",
+    "image": "food-imgs/assorty_iz_shashlikov.webp",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Стейк «Миньон»",
+    "image": "/food-imgs/steyk-minyon.webp",
     "category": "Мангал"
+  },
+  {
+    "title": "Стейк «Томагавк»",
+    "image": "/food-imgs/steyk-tomogavk.webp",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Кавказское ассорти",
+    "image": "food-imgs/kavkazskoe_assorty.webp",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Стейк «Мраморный рибай»",
+    "image": "/food-imgs/steyk-mramorniy-ribay.webp",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Каре ягнёнка",
+    "image": "/food-imgs/kare-yagnenka.webp",
+    "category": "Стейки и мясные"
+  },
+
+  {
+    "title": "Праздничный манди с перепелами",
+    "image": "/food-imgs/prazdnichniy_mandi_s_perepalami.webp",
+    "category": "Стейки и мясные"
+  },
+  {
+    "title": "Бефстроганов по-швейцарски",
+    "image": "/food-imgs/befstroganov-po-shveycarsky.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Жаркое из говядины",
+    "image": "/food-imgs/jarkoe-iz-govyadiny.webp",
+    "category": "Горячие блюда"
   },
   {
     "title": "Лосось по-норвежски",
     "image": "/food-imgs/losos-po-norvejski.webp",
-    "category": "Мангал"
+    "category": "Горячие блюда"
   },
   {
     "title": "Стейк из лосося в сливочно-икорном соусе",
     "image": "/food-imgs/steyk-iz-lososya-v-slivochno-ikirnom-souse.webp",
-    "category": "Мангал"
+    "category": "Горячие блюда"
   },
   {
     "title": "Дорадо по-домашнему",
     "image": "/food-imgs/dorado-po-domashnemu.webp",
-    "category": "Мангал"
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Стейк из лосося в соусе терияки",
+    "image": "/food-imgs/steyk-iz-lososya-v-souse-teriyaki.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Плов манди с перепелками",
+    "image": "/food-imgs/plov-mandi-s-perepelkami.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Креветки в панировке",
+    "image": "/food-imgs/krivetki-v-panirovke.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Ризотто",
+    "image": "/food-imgs/goryachie/gor 1.jpg",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Баранья рулька в таджине",
+    "image": "/food-imgs/baranya-rulka-v-tadjine.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Капрезе",
+    "image": "/food-imgs/goryachie/gor 3.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Куриная грудка в медовом соусе",
+    "image": "/food-imgs/goryachie/gor 5.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Крылышки BBQ",
+    "image": "/food-imgs/goryachie/gor 6.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Цепленок по Голандский",
+    "image": "/food-imgs/goryachie/gor 7.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Равиолли",
+    "image": "/food-imgs/goryachie/gor 8.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Креветки от шефа",
+    "image": "/food-imgs/goryachie/gor 9.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Креветки Дубай",
+    "image": "/food-imgs/goryachie/gor 10.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Спринг роллы",
+    "image": "/food-imgs/goryachie/gor 11.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Рис острый по Корейский",
+    "image": "/food-imgs/goryachie/gor 13.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Бефстроганов по Швейцарский",
+    "image": "/food-imgs/goryachie/gor 14.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Мясо по Турецкий",
+    "image": "/food-imgs/goryachie/gor 15.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Бенто с креветкой",
+    "image": "/food-imgs/goryachie/gor 16.png",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Креветки дубай",
+    "image": "/food-imgs/krivetki-dubay.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Рис острый по-корейски",
+    "image": "/food-imgs/ris-ostriy-po-koreyski.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Креветки от шефа на гриле",
+    "image": "/food-imgs/krivetki-ot-shefa-na-grile.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Медальоны",
+    "image": "/food-imgs/medalyony.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Лапша удон с куриным филе",
+    "image": "/food-imgs/lapsha-udon-s-kurinnym-file.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Куриная грудка с овощами в медовом соусе",
+    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-v-medovom-souse.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Куриная грудка с овощами на гриле",
+    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-na-grile.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Цыпленок по-голландски",
+    "image": "/food-imgs/ciplenok-po-gollandsky.webp",
+    "category": "Горячие блюда"
+  },
+  {
+    "title": "Хачапури с сыром и яйцом",
+    "image": "/food-imgs/hachapuri-s-sirom-i-yaycom.webp",
+    "category": "Пиццы и мучное"
+  },
+  {
+    "title": "Курзе",
+    "image": "/food-imgs/kurze.webp",
+    "category": "Пиццы и мучное"
+  },
+  {
+    "title": "Пицца Римская Маргарита",
+    "image": "/food-imgs/pizza/pizza 1.png",
+    "category": "Пиццы и мучное"
+  },
+  {
+    "title": "Пицца Пепперони",
+    "image": "/food-imgs/pizza/pizza 2.png",
+    "category": "Пиццы и мучное"
+  },
+  {
+    "title": "Пицца став со шпинатом и брокколи",
+    "image": "/food-imgs/picca-s-brokkali.webp",
+    "category": "Пиццы и мучное"
+  },
+  {
+    "title": "Пицца став с курицей и брокколи",
+    "image": "/food-imgs/picca-s-brokkali.webp",
+    "category": "Пиццы и мучное"
+  },
+
+  {
+    "title": "Суп «Кук си»",
+    "image": "/food-imgs/sup-kuk-si.webp",
+    "category": "Супы"
+  },
+  {
+    "title": "Рамен куриный/говяжий",
+    "image": "/food-imgs/ramen-kurinniy-govyajiy.webp",
+    "category": "Супы"
+  },
+
+  {
+    "title": "Том-ям с морепродуктами/с курицей",
+    "image": "/food-imgs/tom-yam-s-moreporudctami-s-kuricey.webp",
+    "category": "Супы"
+  },
+  {
+    "title": "Суп салат Кук си",
+    "image": "/food-imgs/soup/soup_3.png",
+    "category": "Супы"
+  },
+  {
+    "title": "Суп куриный с домашней лапшой",
+    "image": "/food-imgs/sup-kuriniy-s-domashney-lapshoy.webp",
+    "category": "Супы"
+  },
+  {
+    "title": "Паста с лососем и креветками в томатном соусе",
+    "image": "/food-imgs/pasta/pasta_1.png",
+    "category": "Пасты"
+  },
+  {
+    "title": "Лапша удон с курицей",
+    "image": "/food-imgs/pasta/pasta_3.png",
+    "category": "Пасты"
+  },
+  {
+    "title": "Паста с курицей и грибами",
+    "image": "/food-imgs/pasta-s-kirucey-i-gribami.webp",
+    "category": "Пасты"
+  },
+  {
+    "title": "Паста равиоли с курицей",
+    "image": "/food-imgs/pasta-ravioli-s-kuricey.webp",
+    "category": "Пасты"
+  },
+  {
+    "title": "Спагетти с брокколи и шпинатом в сливочном соусе",
+    "image": "/food-imgs/spagetti-s-brokkoli-i-shpinatom-v-slivochnom-souse.webp",
+    "category": "Пасты"
+  },
+  {
+    "title": "Паста фетучини с морепродуктами в сливочном соусе",
+    "image": "/food-imgs/pasta-fetuchini-s-moreproductami-v-slivochnom-souse.webp",
+    "category": "Пасты"
   },
   {
     "title": "Салат «Авокадо»",
@@ -80,106 +513,6 @@
     "category": "Салаты"
   },
   {
-    "title": "Баранья рулька в таджине",
-    "image": "/food-imgs/baranya-rulka-v-tadjine.webp",
-    "category": "Другое"
-  },
-  {
-    "title": "Креветки в панировке",
-    "image": "/food-imgs/krivetki-v-panirovke.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Спринг роллы",
-    "image": "/food-imgs/spring-rolli.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Каре ягнёнка",
-    "image": "/food-imgs/kare-yagnenka.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Стейк «Миньон»",
-    "image": "/food-imgs/steyk-minyon.webp",
-    "category": "Мангал"
-  },
-  {
-    "title": "Стейк «Томагавк»",
-    "image": "/food-imgs/steyk-tomogavk.webp",
-    "category": "Мангал"
-  },
-  {
-    "title": "Стейк «Мраморный рибай»",
-    "image": "/food-imgs/steyk-mramorniy-ribay.webp",
-    "category": "Мангал"
-  },
-  {
-    "title": "Рис острый по-корейски",
-    "image": "/food-imgs/ris-ostriy-po-koreyski.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Жаркое из говядины",
-    "image": "/food-imgs/jarkoe-iz-govyadiny.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Бефстроганов по-швейцарски",
-    "image": "/food-imgs/befstroganov-po-shveycarsky.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Медальоны",
-    "image": "/food-imgs/medalyony.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Куриная грудка с овощами в медовом соусе",
-    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-v-medovom-souse.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Куриная грудка с овощами на гриле",
-    "image": "/food-imgs/kurinaya-grudka-s-ovoshami-na-grile.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Паста равиоли с курицей",
-    "image": "/food-imgs/pasta-ravioli-s-kuricey.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Спагетти с брокколи и шпинатом в сливочном соусе",
-    "image": "/food-imgs/spagetti-s-brokkoli-i-shpinatom-v-slivochnom-souse.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Паста фетучини с морепродуктами в сливочном соусе",
-    "image": "/food-imgs/pasta-fetuchini-s-moreproductami-v-slivochnom-souse.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Суп куриный с домашней лапшой",
-    "image": "/food-imgs/sup-kuriniy-s-domashney-lapshoy.webp",
-    "category": "Евро кухня"
-  },
-  {
-    "title": "Суп «Кук си»",
-    "image": "/food-imgs/sup-kuk-si.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Рамен куриный/говяжий",
-    "image": "/food-imgs/ramen-kurinniy-govyajiy.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Том-ям с морепродуктами/с курицей",
-    "image": "/food-imgs/tom-yam-s-moreporudctami-s-kuricey.webp",
-    "category": "Суши и Роллы"
-  },
-  {
     "title": "Салат пп от шефа",
     "image": "/food-imgs/salat-pp-ot-shefa.webp",
     "category": "Салаты"
@@ -188,21 +521,6 @@
     "title": "Салат «Турецкий»",
     "image": "/food-imgs/salat-tureckiy.webp",
     "category": "Салаты"
-  },
-  {
-    "title": "Суши La-тауэр",
-    "image": "/food-imgs/sushi-la-tower.webp",
-    "category": "Суши и Роллы"
-  },
-  {
-    "title": "Курзе",
-    "image": "/food-imgs/kurze.webp",
-    "category": "Нац. кухня"
-  },
-  {
-    "title": "Цыпленок по-голландски",
-    "image": "/food-imgs/ciplenok-po-gollandsky.webp",
-    "category": "Евро кухня"
   },
   {
     "title": "Салат «Идеальный зелёный»",
@@ -220,23 +538,93 @@
     "category": "Салаты"
   },
   {
-    "title": "Праздничный манди с перепелами",
-    "image": "/food-imgs/prazdnichniy_mandi_s_perepalami.webp",
-    "category": "Евро кухня"
+    "title": "Салат с малосоленой семгой",
+    "image": "/food-imgs/salad/salad_1.png",
+    "category": "Салаты"
   },
   {
-    "title": "Кавказское ассорти",
-    "image": "food-imgs/kavkazskoe_assorty.webp",
-    "category": "Нац. кухня"
+    "title": "Покебол с курицей",
+    "image": "/food-imgs/salad/salad_2.png",
+    "category": "Салаты"
   },
   {
-    "title": "Ассорти из шашлыков",
-    "image": "food-imgs/assorty_iz_shashlikov.webp",
-    "category": "Мангал"
+    "title": " Салат Латауер",
+    "image": "/food-imgs/salad/salad_3.png",
+    "category": "Салаты"
   },
   {
-    "title": "Детский набор Бенто",
-    "image": "/food-imgs/detsky_nabor_bento.webp",
-    "category": "Евро кухня"
+    "title": "Салат Греческий",
+    "image": "/food-imgs/salad/salad_4.png",
+    "category": "Салаты"
+  },
+  {
+    "title": "Салат Буратта",
+    "image": "/food-imgs/salad/salad_5.png",
+    "category": "Салаты"
+  },
+  {
+    "title": "Салат Васаби",
+    "image": "/food-imgs/salad/salad_6.png",
+    "category": "Салаты"
+  },
+  {
+    "title": "Салат Нежная моцарелла",
+    "image": "/food-imgs/salad/salad_7.png",
+    "category": "Салаты"
+  },
+  {
+    "title": "Нарезка фруктовая",
+    "image": "/food-imgs/deserts/desert_1.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Профитроли с мороженным",
+    "image": "/food-imgs/deserts/desert_2.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Яблочный штрудель",
+    "image": "/food-imgs/deserts/desert_3.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Шоколадиссимо",
+    "image": "/food-imgs/deserts/desert_4.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Бельгийские вафли",
+    "image": "/food-imgs/deserts/desert_5.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Десерт авакадо",
+    "image": "/food-imgs/deserts/desert_6.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Шарлотка",
+    "image": "/food-imgs/deserts/desert_7.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Фисташковый рулет",
+    "image": "/food-imgs/deserts/desert_8.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Творожно-фруктовый ролл",
+    "image": "/food-imgs/deserts/desert_9.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Десерт парадиз",
+    "image": "/food-imgs/deserts/desert_10.jpg",
+    "category": "Десерты"
+  },
+  {
+    "title": "Чизкейк сан-себастьян",
+    "image": "/food-imgs/deserts/desert_10.jpg",
+    "category": "Десерты"
   }
 ]
