@@ -1,8 +1,8 @@
 [
   {
-    "name": "Лайла",
+    "name": "Диана",
     "position": "Хостес",
-    "image": "/staff-imgs/leyla.webp",
+    "image": "/staff-imgs/diana.webp",
     "id": 1
   },
   {
@@ -12,45 +12,75 @@
     "id": 2
   },
   {
+    "name": "Асхьаб",
+    "position": "Официант",
+    "image": "/staff-imgs/ashab.webp",
+    "id": 3
+  },
+  {
     "name": "Муса",
     "position": "Официант",
     "image": "/staff-imgs/musa.webp",
-    "id": 3
+    "id": 4
+  },
+  {
+    "name": "Азиз",
+    "position": "Официант",
+    "image": "/staff-imgs/aziz.webp",
+    "id": 5
   },
   {
     "name": "Марет",
     "position": "Официантка",
     "image": "/staff-imgs/mareta.webp",
-    "id": 4
+    "id": 6
+  },
+  {
+    "name": "Шамиль",
+    "position": "Официант",
+    "image": "/staff-imgs/shamil.webp",
+    "id": 7
   },
   {
     "name": "Муслим",
     "position": "Официант",
     "image": "/staff-imgs/muslim.webp",
-    "id": 5
+    "id": 8
   },
   {
     "name": "Рахман",
     "position": "Официант",
     "image": "/staff-imgs/rahman.webp",
-    "id": 6
+    "id": 9
+  },
+  {
+    "name": "Марьям",
+    "position": "Официантка",
+    "image": "/staff-imgs/mariam.webp",
+    "id": 10
   },
   {
     "name": "Рустам",
     "position": "Официант",
     "image": "/staff-imgs/rustam.webp",
-    "id": 7
+    "id": 11
   },
   {
     "name": "София",
     "position": "Официантка",
     "image": "/staff-imgs/sophia.webp",
-    "id": 8
+    "id": 12
+  },
+  {
+    "name": "Джамал",
+    "position": "Официант",
+    "image": "/staff-imgs/jamal.webp",
+    "id": 13
   },
   {
     "name": "Мадина",
     "position": "Официантка",
     "image": "/staff-imgs/madina.webp",
-    "id": 9
+    "id": 14
   }
 ]
