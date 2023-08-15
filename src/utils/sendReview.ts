@@ -1,6 +1,6 @@
 import { getValueFromLS } from './getValueFromLS';
 
-const BASE_URL = 'https://api.the-loft-reviews.ru/wasabi';
+const BASE_URL = 'https://reviews-tg-proxy.onrender.com/wasabi';
 
 interface ReviewType {
   name: string;
