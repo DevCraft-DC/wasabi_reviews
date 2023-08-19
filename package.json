@@ -1,6 +1,7 @@
 {
   "name": "wasabireviews",
   "private": true,
+  "homepage": "https://wasabi-reviews.ru",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
