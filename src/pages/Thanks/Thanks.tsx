@@ -18,6 +18,11 @@ const Thanks = () => {
       <LinkButton to="/choose" onClick={removeData}>
         Оставить еще один отзыв
       </LinkButton>
+
+      <footer className={styles.devcraft}>
+        <p>разработано студией devcraft</p>
+        <a href="https://devcraft-dc.github.io/contacts/">связаться с нами</a>
+      </footer>
     </div>
   );
 };
